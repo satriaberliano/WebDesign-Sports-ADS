@@ -1,0 +1,135 @@
+:root {
+  --text-color-white: #FFFFFF;
+  --text-color-black: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #86DCF5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 70px;
+  color: var(--text-color-black);
+  z-index: 5;
+}
+
+header .navigation ul {
+  display: flex;
+  align-items: center;
+}
+
+header .navigation ul li {
+  list-style: none;
+  margin-left: 10px !important;
+}
+
+header .navigation ul li a {
+  text-decoration: none;
+  color: var(--main-color-1);
+  padding-left: 8px;
+  font-weight: 500;
+  margin-right: 5px;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+header .navigation ul li a:hover{
+  text-decoration: underline;
+  transition: 0.2s ease-in;
+}
+
+.header-name {
+  font-family: 'Press Start 2P', sans-serif;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  line-height: 20px;
+  align-items: center;
+  color: var(--text-color-white);
+  -webkit-text-stroke: 0.75px black;
+  text-shadow:
+      0px 1px 0 #000,
+      0px 2px 0 #000;
+  /* text-shadow: 2px 1.5px var(--text-color-black); */
+}
+
+header .nav-btn {
+  padding: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--main-color-1);
+  display: none;
+}
+
+/* ============================= */
+.home-container {
+  background-color: #86DCF5;
+  margin: auto 0;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.home-slogan {
+  font-size: 46px;
+  line-height: 65px;
+  font-family: 'Press Start 2P', sans-serif;
+  background: linear-gradient(
+    to bottom, #FFB800, #FFD700,
+    #FFF500);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-stroke: 0.75px black;
+  /* text-shadow: 2px 2px 0 #000; */
+}
+
+.home-slogan span {
+  background: linear-gradient(
+    to bottom, #FF0000,
+    #FFFFFF);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: none;
+  
+}
+
+.home-text {
+  margin: 70px 0;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Roboto Mono', sans-serif;
+
+}
+
+.home-container a {
+  border: 0;
+  color: transparent;
+  font-family: 'Press Start 2P', sans-serif;
+  padding: 20px;
+  cursor: pointer;
+  background-image: url(/src/assets/button-mulai-jelajah.png);
+  background-size: cover;
+}
+
+.home-container a:hover {
+  background-image: url(/src/assets/button-mulai-jelajah-hover.png);
+  transition: 0.2s ease-in;
+}
+
