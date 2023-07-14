@@ -1,16 +1,15 @@
 :root {
-  --text-color-white: #FFFFFF;
+  --text-color-white: #ffffff;
   --text-color-black: #000000;
 }
 
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background-color: #86DCF5;
+  background-color: #56cdf0;
 }
 
 html {
@@ -18,14 +17,11 @@ html {
 }
 
 header {
-  position: sticky;
-  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 70px;
+  padding: 10px 70px;
   color: var(--text-color-black);
-  z-index: 5;
 }
 
 header .navigation ul {
@@ -47,7 +43,7 @@ header .navigation ul li a {
   font-family: 'Roboto Mono', sans-serif;
 }
 
-header .navigation ul li a:hover{
+header .navigation ul li a:hover {
   text-decoration: underline;
   transition: 0.2s ease-in;
 }
@@ -61,9 +57,7 @@ header .navigation ul li a:hover{
   align-items: center;
   color: var(--text-color-white);
   -webkit-text-stroke: 0.75px black;
-  text-shadow:
-      0px 1px 0 #000,
-      0px 2px 0 #000;
+  text-shadow: 0px 1px 0 #000, 0px 2px 0 #000;
   /* text-shadow: 2px 1.5px var(--text-color-black); */
 }
 
@@ -78,21 +72,26 @@ header .nav-btn {
   display: none;
 }
 
-/* ============================= */
+/* ====================================================== */
+/* ====================================================== */
+
+.home {
+  text-align: center;
+}
+
 .home-container {
-  background-color: #86DCF5;
+  /* background-color: #86dcf5; */
   margin: auto 0;
   text-align: center;
   padding: 70px 0;
+  z-index: 5;
 }
 
 .home-slogan {
   font-size: 46px;
   line-height: 65px;
   font-family: 'Press Start 2P', sans-serif;
-  background: linear-gradient(
-    to bottom, #FFB800, #FFD700,
-    #FFF500);
+  background: linear-gradient(to bottom, #ffb800, #ffd700, #fff500);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: none;
@@ -101,13 +100,10 @@ header .nav-btn {
 }
 
 .home-slogan span {
-  background: linear-gradient(
-    to bottom, #FF0000,
-    #FFFFFF);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: none;
-  
+  background: linear-gradient(to bottom, #ff0000, #ffffff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: none;
 }
 
 .home-text {
@@ -115,7 +111,6 @@ header .nav-btn {
   font-size: 20px;
   font-weight: 500;
   font-family: 'Roboto Mono', sans-serif;
-
 }
 
 .home-container a {
@@ -126,6 +121,7 @@ header .nav-btn {
   cursor: pointer;
   background-image: url(/src/assets/button-mulai-jelajah.png);
   background-size: cover;
+  z-index: 5;
 }
 
 .home-container a:hover {
@@ -133,3 +129,56 @@ header .nav-btn {
   transition: 0.2s ease-in;
 }
 
+/* ====================================================== */
+/* ====================================================== */
+
+.sports-container {
+  font-family: 'Press Start 2P', sans-serif;
+  text-align: center;
+  padding: 25px 150px 50px 150px;
+  z-index: 5;
+}
+
+.sports-container h3 {
+  font-size: 38px;
+  margin: 25px 0 50px 0;
+  color: var(--text-color-white);
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 2px 4px 0 #000, 3px 3px 0 #000;
+}
+
+.sports-type-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 100px;
+  padding: 0 50px;
+}
+
+.sports-type-container a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+.sports-type-container a:hover {
+  box-shadow: 0px 4px 8px 0px rgb(75, 75, 75);
+  animation: 1s ease-in-out;
+}
+
+.sports-card {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  justify-self: center;
+  width: 100%;
+}
+
+.sports-card p {
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.sports-card img {
+  width: 100%;
+}
