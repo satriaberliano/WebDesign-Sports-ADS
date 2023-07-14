@@ -35,19 +35,19 @@
 
 .bg-awan-1 {
   top: 71px;
-  animation: slideRight 20s linear infinite;
+  animation: slideLeft 20s linear infinite;
   z-index: 8;
 }
 
 .bg-awan-2 {
   top: 269px;
-  animation: slideRight 30s linear infinite;
+  animation: slideLeft 30s linear infinite;
   z-index: 1;
 }
 
 .bg-awan-3 {
   top: 469px;
-  animation: slideRight 40s linear infinite;
+  animation: slideLeft 40s linear infinite;
   /* z-index: -3; */
 }
 
@@ -90,7 +90,7 @@
 .background-tanah-container {
   display: flex;
   flex-direction: row;
-  animation: slideRight 60s linear infinite;
+  animation: slideLeft 30s linear infinite;
   gap: 0;
 }
 
@@ -103,12 +103,12 @@
   height: 100px;
 }
 
-@keyframes slideRight {
+@keyframes slideLeft {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(-50%);
   }
 }
 
@@ -117,10 +117,10 @@
     transform: translateY(150%);
   }
   45% {
-    transform: translateY(96%);
+    transform: translateY(85%);
   }
   55% {
-    transform: translateY(96%);
+    transform: translateY(85%);
   }
   100% {
     transform: translateY(150%);
