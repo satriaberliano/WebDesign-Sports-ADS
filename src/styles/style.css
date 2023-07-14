@@ -1,20 +1,23 @@
 :root {
-  --text-color-white: #FFFFFF;
+  --text-color-white: #ffffff;
   --text-color-black: #000000;
 }
 
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background-color: #86DCF5;
+  background-color: #56cdf0;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.home {
+  text-align: center;
 }
 
 header {
@@ -23,7 +26,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 70px;
+  padding: 10px 70px;
   color: var(--text-color-black);
   z-index: 5;
 }
@@ -47,7 +50,7 @@ header .navigation ul li a {
   font-family: 'Roboto Mono', sans-serif;
 }
 
-header .navigation ul li a:hover{
+header .navigation ul li a:hover {
   text-decoration: underline;
   transition: 0.2s ease-in;
 }
@@ -61,9 +64,7 @@ header .navigation ul li a:hover{
   align-items: center;
   color: var(--text-color-white);
   -webkit-text-stroke: 0.75px black;
-  text-shadow:
-      0px 1px 0 #000,
-      0px 2px 0 #000;
+  text-shadow: 0px 1px 0 #000, 0px 2px 0 #000;
   /* text-shadow: 2px 1.5px var(--text-color-black); */
 }
 
@@ -80,19 +81,18 @@ header .nav-btn {
 
 /* ============================= */
 .home-container {
-  background-color: #86DCF5;
+  /* background-color: #86dcf5; */
   margin: auto 0;
   text-align: center;
   padding: 70px 0;
+  z-index: 5;
 }
 
 .home-slogan {
   font-size: 46px;
   line-height: 65px;
   font-family: 'Press Start 2P', sans-serif;
-  background: linear-gradient(
-    to bottom, #FFB800, #FFD700,
-    #FFF500);
+  background: linear-gradient(to bottom, #ffb800, #ffd700, #fff500);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: none;
@@ -101,13 +101,10 @@ header .nav-btn {
 }
 
 .home-slogan span {
-  background: linear-gradient(
-    to bottom, #FF0000,
-    #FFFFFF);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: none;
-  
+  background: linear-gradient(to bottom, #ff0000, #ffffff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: none;
 }
 
 .home-text {
@@ -115,7 +112,6 @@ header .nav-btn {
   font-size: 20px;
   font-weight: 500;
   font-family: 'Roboto Mono', sans-serif;
-
 }
 
 .home-container a {
@@ -126,10 +122,10 @@ header .nav-btn {
   cursor: pointer;
   background-image: url(/src/assets/button-mulai-jelajah.png);
   background-size: cover;
+  z-index: 5;
 }
 
 .home-container a:hover {
   background-image: url(/src/assets/button-mulai-jelajah-hover.png);
   transition: 0.2s ease-in;
 }
-
