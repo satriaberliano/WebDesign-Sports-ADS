@@ -72,6 +72,17 @@
   width: 105%;
 }
 
+.tanaman-1 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.bendera {
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+}
+
 .bg-tanaman-1,
 .bg-tanaman-2 {
   z-index: 50;
@@ -85,6 +96,64 @@
 
 .bg-tanaman-2 {
   margin-top: 8px;
+}
+
+.bg-football,
+.bg-taekwondo,
+.bg-angkatbesi,
+.bg-badminton,
+.bg-caturKuda,
+.bg-caturMenteri {
+  position: absolute;
+}
+
+.bg-football {
+  z-index: 10;
+  left: 20%;
+  transform: translateX(-20%);
+}
+
+.bg-taekwondo {
+  left: 40%;
+  bottom: 130px;
+  transform: translateX(-40%);
+}
+
+.bg-angkatbesi {
+  z-index: 10;
+  left: 60%;
+  bottom: 100px;
+  transform: translateX(-60%);
+}
+
+.bg-badminton {
+  left: 75%;
+  bottom: 100px;
+  transform: translateX(-75%);
+}
+
+.bg-caturKuda {
+  left: 85%;
+  bottom: 100px;
+  transform: translateX(-85%);
+}
+
+.bg-caturMenteri {
+  z-index: 10;
+  left: 88%;
+  bottom: 100px;
+  transform: translateX(-88%);
+}
+
+.bg-rumput {
+  position: absolute;
+  margin: auto;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height: 90px;
+  z-index: 1;
 }
 
 .background-tanah-container {
@@ -117,10 +186,10 @@
     transform: translateY(150%);
   }
   45% {
-    transform: translateY(85%);
+    transform: translateY(90%);
   }
   55% {
-    transform: translateY(85%);
+    transform: translateY(90%);
   }
   100% {
     transform: translateY(150%);

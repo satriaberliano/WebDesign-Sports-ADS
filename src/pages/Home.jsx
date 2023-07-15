@@ -9,7 +9,8 @@ function Home() {
         <h3 className='home-slogan'>
           MARI KITA JELAJAHI
           <br /> SEJARAH OLAHRAGA
-          <br /> <span>DI INDONESIA</span>!
+          <br />
+          DI<span> INDONESIA!</span>
         </h3>
         <p className='home-text'>
           Mari kita jelajahi dan gali sejarah dari <br />
