@@ -1,16 +1,18 @@
-import React from "react";
-import { rootPath, homePath } from "./routes";
-import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import AppHeader from "./components/AppHeader";
+import React from 'react';
+import { rootPath, homePath, footballHistoryPath } from './routes';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import AppHeader from './components/AppHeader';
+import FootballHistory from './pages/FootballHistory';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <AppHeader />
       <main>
         <Routes>
-          {[rootPath, homePath].map((path, index) => (
+          <Route path={footballHistoryPath} element={<FootballHistory />} />
+          {[rootPath, homePath, footballHistoryPath].map((path, index) => (
             <Route path={path} element={<Home />} key={index} />
           ))}
         </Routes>

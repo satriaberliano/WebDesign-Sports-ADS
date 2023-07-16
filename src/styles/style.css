@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --text-color-white: #ffffff;
   --text-color-black: #000000;
@@ -128,4 +132,9 @@ header .nav-btn {
 .home-container a:hover {
   background-image: url(/src/assets/button-mulai-jelajah-hover.png);
   transition: 0.2s ease-in;
+}
+
+.data-item-content {
+  display: flex;
+  flex-direction: column;
 }
