@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/style.css';
 import bola from '../assets/img-sejarah/bola.png';
 import tali from '../assets/img-sejarah/tali.png';
+import angkatBesi from '../assets/img-background/angkatbesi.png';
 
 const FootballHistory = () => {
   const dataExperience = [
@@ -38,7 +39,9 @@ const FootballHistory = () => {
             >
               {(id + 1) % 2 !== 0 && (
                 <>
-                  <div></div>
+                  <div className='flex mx-auto my-auto justify-center items-center w-[120px] h-[120px]'>
+                    <img src={angkatBesi} alt='angkatbesi' />
+                  </div>
                   <div>
                     <span className='sport-rounder rounded-full w-[40px] hidden xl:block '>
                       <img src={bola} alt='bola' width='45' />
