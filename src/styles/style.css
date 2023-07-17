@@ -108,7 +108,8 @@ header .nav-btn {
   display: flex;
 }
 
-.footer-top_category-sub p, .footer-top_category-sub li {
+.footer-top_category-sub p,
+.footer-top_category-sub li {
   margin-left: 70px;
   text-align: left;
 }
@@ -117,11 +118,11 @@ header .nav-btn {
   margin-bottom: 25px;
 }
 
-.footer-top_category-sub ul{
+.footer-top_category-sub ul {
   list-style: none;
 }
 
-.footer-top_category-sub ul li{
+.footer-top_category-sub ul li {
   margin-top: 15px;
 }
 
@@ -141,7 +142,6 @@ header .nav-btn {
 .footer-bottom_list ul li {
   margin-right: 40px !important;
 }
-
 
 /* ====================================================== */
 /* ====================================================== */
@@ -336,10 +336,10 @@ header .nav-btn {
 
 @keyframes anchorBackground {
   from {
-    background-color: #FFAF95;
+    background-color: #ffaf95;
   }
   to {
-    background-color: #D6FFB5;
+    background-color: #d6ffb5;
   }
 }
 
@@ -388,11 +388,17 @@ header .nav-btn {
 /* ====================================================== */
 /* ====================================================== */
 
+.silat {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
 .silat h3 {
   font-family: 'Press Start 2P', sans-serif;
   text-align: center;
   font-size: 38px;
   margin: 50px 0;
+  margin-top: 2em;
   color: var(--text-color-white);
   -webkit-text-stroke: 1px #000;
   text-shadow: 2px 4px 0 #000, 3px 3px 0 #000;
@@ -406,7 +412,6 @@ header .nav-btn {
 .silat-top span {
   font-family: 'Silkscreen', cursive;
 }
-
 
 .silat-top p {
   background-image: url(/src/assets/pixel-speech-bubble.png);
@@ -483,4 +488,3 @@ header .nav-btn {
   /* position: absolute; */
   z-index: -1;
 }
-
