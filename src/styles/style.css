@@ -108,14 +108,17 @@ header .nav-btn {
   display: flex;
 }
 
+.footer-top_category-sub p, .footer-top_category-sub li {
+  margin-left: 70px;
+  text-align: left;
+}
+
 .footer-top_category-sub p {
-  margin-left: 60px !important;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .footer-top_category-sub ul{
   list-style: none;
-  margin-left: 100px !important;
 }
 
 .footer-top_category-sub ul li{
@@ -203,8 +206,14 @@ header .nav-btn {
 .sports-container {
   font-family: 'Press Start 2P', sans-serif;
   text-align: center;
-  padding: 25px 150px 50px 150px;
+  padding: 25px 150px 0px 150px;
   z-index: 5;
+}
+
+.sports #sports-rumput {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
 }
 
 .sports-container h3 {
@@ -253,6 +262,10 @@ header .nav-btn {
 
 /* ====================================================== */
 /* ====================================================== */
+
+.soccer {
+  z-index: 5;
+}
 
 .soccer h3 {
   font-family: 'Press Start 2P', sans-serif;
@@ -330,6 +343,48 @@ header .nav-btn {
   }
 }
 
+.soccer-background {
+  position: absolute;
+  width: 100%;
+  height: 96vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: -2;
+}
+
+.soccer #soccer-tanaman {
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  /* bottom: 52px; */
+  bottom: 170px;
+}
+
+.soccer-tanah-container {
+  display: flex;
+  flex-direction: row;
+  animation: slideLeft 15s linear infinite;
+  gap: 0;
+}
+
+.soccer #soccer-tanah {
+  position: absolute;
+  bottom: -25px;
+  z-index: -2;
+  /* bottom: -165px; */
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* ====================================================== */
 /* ====================================================== */
 
@@ -399,3 +454,33 @@ header .nav-btn {
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
 }
+
+.silat-background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: -2;
+}
+
+.silat #silat-bangunan {
+  width: 100%;
+  position: absolute;
+  z-index: -3;
+}
+
+.silat #silat-batu {
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  bottom: -10px;
+}
+
+.silat-obor-container .obor {
+  /* position: absolute; */
+  z-index: -1;
+}
+

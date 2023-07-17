@@ -7,6 +7,7 @@ import logobulutangkis from "../assets/logo-sports/bulu-tangkis.png"
 import logoangkatbesi from "../assets/logo-sports/angkat-besi.png"
 import { Link } from "react-router-dom";
 import { silatPath, soccerPath } from "../routes";
+import rumput from "../assets/img-background/rumput.png";
 
 function Sports(){
   return (
@@ -40,6 +41,7 @@ function Sports(){
           </Link>
         </div>
       </div>
+      <img src={rumput} alt="rumput" id="sports-rumput"/>
     </div>
   );
 }
