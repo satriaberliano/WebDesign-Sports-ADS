@@ -1,0 +1,123 @@
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: -2;
+}
+
+.background-awan-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  right: 0;
+  z-index: -1;
+}
+
+.bg-awan-1,
+.bg-awan-2,
+.bg-awan-3 {
+  position: absolute;
+  width: 240%;
+  left: -10%;
+}
+
+.img-awan-1,
+.img-awan-2,
+.img-awan-3 {
+  width: 12em;
+}
+
+.bg-awan-1 {
+  top: 71px;
+  animation: slideRight 20s linear infinite;
+  z-index: 8;
+}
+
+.bg-awan-2 {
+  top: 269px;
+  animation: slideRight 30s linear infinite;
+  z-index: 1;
+}
+
+.bg-awan-3 {
+  top: 469px;
+  animation: slideRight 40s linear infinite;
+  /* z-index: -3; */
+}
+
+.bg-bangunan-1 {
+  margin-top: 100px;
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  z-index: -2;
+}
+
+.bg-bangunan-2 {
+  animation: slideTop 10s linear infinite;
+  width: fit-content;
+  margin: auto;
+}
+
+.background-tanaman-container {
+  display: flex;
+  justify-content: space-between;
+  width: 105%;
+}
+
+.bg-tanaman-1,
+.bg-tanaman-2 {
+  z-index: 50;
+  width: 16em;
+}
+
+.bg-tanaman-1 {
+  position: relative;
+  left: -60px;
+}
+
+.bg-tanaman-2 {
+  margin-top: 8px;
+}
+
+.background-tanah-container {
+  display: flex;
+  flex-direction: row;
+  animation: slideRight 60s linear infinite;
+  gap: 0;
+}
+
+.bg-tanah-1 {
+  position: absolute;
+  left: -10px;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(150%);
+  }
+  45% {
+    transform: translateY(96%);
+  }
+  55% {
+    transform: translateY(96%);
+  }
+  100% {
+    transform: translateY(150%);
+  }
+}
