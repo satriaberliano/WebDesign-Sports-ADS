@@ -2,12 +2,12 @@ import React from 'react';
 import '../../styles/history.css';
 import bola from '../../assets/img-sejarah/bola.png';
 import tali from '../../assets/img-sejarah/tali.png';
-import awan from '../../assets/img-background/awan.png';
 import character1 from '../../assets/img-sejarah/footbal-characters/football-ch-1.png';
 import character2 from '../../assets/img-sejarah/footbal-characters/football-ch-2.png';
 import character3 from '../../assets/img-sejarah/footbal-characters/football-ch-3.png';
 import character4 from '../../assets/img-sejarah/footbal-characters/football-ch-4.png';
 import FooterHistory from '../../components/FooterHistory';
+import BackgroundAwan from '../../components/BackgroundAwan';
 
 const FootballHistory = () => {
   const dataExperience = [
@@ -40,7 +40,7 @@ const FootballHistory = () => {
 
   return (
     <div className='sport-container'>
-      <div className='background-awan-container'>
+      {/* <div className='background-awan-container'>
         <div className='bg-awan1'>
           <img src={awan} alt='background-awan' className='img-awan1' />
         </div>
@@ -50,7 +50,8 @@ const FootballHistory = () => {
         <div className='bg-awan3'>
           <img src={awan} alt='background-awan' className='img-awan3' />
         </div>
-      </div>
+      </div> */}
+      <BackgroundAwan />
       <div className='sport-section'>
         <div className='sport-content-1'>
           {dataExperience.map((experience, id, arr) => (
