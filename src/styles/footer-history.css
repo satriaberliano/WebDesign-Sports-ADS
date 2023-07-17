@@ -1,0 +1,28 @@
+.tanah-container {
+  display: flex;
+  flex-direction: column;
+  animation: slideLeftTanah 25s linear infinite;
+  gap: 0;
+}
+
+.bg-tanah1 {
+  position: absolute;
+  left: -100%;
+}
+
+.bg-tanah2 {
+  z-index: 5;
+}
+
+.bg-tanah {
+  height: 100px;
+}
+
+@keyframes slideLeftTanah {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}

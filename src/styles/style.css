@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --text-color-white: #ffffff;
   --text-color-black: #000000;

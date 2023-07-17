@@ -3,7 +3,7 @@ import { rootPath, homePath, footballHistoryPath } from './routes';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import AppHeader from './components/AppHeader';
-import FootballHistory from './pages/FootballHistory';
+import FootballHistory from './pages/history/FootballHistory';
 
 function App() {
   return (
