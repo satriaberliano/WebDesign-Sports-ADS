@@ -15,7 +15,7 @@ function SilatPage() {
   const [typewriter4Visible, setTypewriter4Visible] = useState(false);
 
   useEffect(() => {
-    const delay = 200; // Waktu penundaan antara munculnya setiap Typewriter (ms)
+    const delay = 500; // Waktu penundaan antara munculnya setiap Typewriter (ms)
 
     const typewriter1Timer = setTimeout(() => {
       setTypewriter1Visible(true);
@@ -23,15 +23,15 @@ function SilatPage() {
 
     const typewriter2Timer = setTimeout(() => {
       setTypewriter2Visible(true);
-    }, delay * 4);
+    }, delay * 2.5);
 
     const typewriter3Timer = setTimeout(() => {
       setTypewriter3Visible(true);
-    }, delay * 12);
+    }, delay * 8);
 
     const typewriter4Timer = setTimeout(() => {
       setTypewriter4Visible(true);
-    }, delay * 16);
+    }, delay * 14);
 
     return () => {
       clearTimeout(typewriter1Timer);
@@ -59,10 +59,7 @@ function SilatPage() {
           <>
             {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
             {typewriter2Visible && (
-              <Typewriter
-                text='MARI KITA MULAI MEMPELAJARI SEJARAH'
-                delay={100}
-              />
+              <Typewriter text='MARI KITA MULAI MEMPELAJARI' delay={100} />
             )}
             {typewriter3Visible && (
               <Typewriter text='SEJARAH SILAT DI INDONESIA' delay={100} />
