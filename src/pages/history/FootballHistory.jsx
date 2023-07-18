@@ -13,13 +13,13 @@ import ArrowUp from '../../components/ArrowUp';
 const FootballHistory = () => {
   const dataExperience = [
     {
-      date: '1914',
-      desc: 'Pada masa tersebut, Indonesia masih dijajah Belanda. Kompetisi antar kota dilakukan serta hanya dijuarai dua tim, yaitu Soerabaja City serta Batavia City.',
+      date: '1893',
+      desc: 'Sepak bola diperkenalkan pertama kali di Indonesia oleh orang-orang Belanda pada masa penjajahan kolonial. Olahraga ini dimainkan terutama oleh komunitas kolonial Belanda.',
       img: character1,
     },
     {
       date: '1930',
-      desc: 'Pada masa tersebut PSSI atau Persatuan Sepakbola Seluruh Indonesia terbentuk. Persatuan tersebut terbentuk di Yogyakarta serta diketuai oleh Soeratin Sosrosoegondo. Dapat dikatakan PSSI lahir disebabkan karena kepentingan politik bangsa, menentang penjajahan serta strategi untuk memupuk benih nasionalisme di hati pemuda Indonesia dengan menggunakan olahraga sepak bola. ',
+      desc: 'Pada masa tersebut PSSI atau Persatuan Sepakbola Seluruh Indonesia terbentuk. Persatuan tersebut terbentuk di Yogyakarta. Organisasi ini bertujuan mengelola dan mengembangkan sepak bola di Indonesia',
       img: character2,
     },
     {
@@ -28,14 +28,34 @@ const FootballHistory = () => {
       img: character3,
     },
     {
-      date: 'Sekarang',
-      desc: 'PSSI sudah berkembang dengan banyak melakukan perluasan jenis kompetisi dan berbagai pertandingan di bawahnya.',
+      date: '1952 - 1954',
+      desc: 'PSSI menjadi anggota FIFA atau Federasi Sepakbola Internasional tahun 1952. Sejak saat itu, PSSI menjadi anggota FIFA yang ke-41. Selanjutnya PSSI menjadi anggota AFC atau Asian Football Confederation pada tahun 1954.',
       img: character4,
     },
     {
-      date: '2021',
-      desc: 'PSSI sudah berkembang dengan banyak melakukan perluasan jenis kompetisi dan berbagai pertandingan di bawahnya.',
+      date: '1985',
+      desc: 'Piala Perserikatan, kompetisi sepak bola terkemuka di Indonesia, diselenggarakan untuk terakhir kalinya pada tahun 1985. Kompetisi ini digantikan oleh Liga Indonesia yang lebih profesional.',
       img: character1,
+    },
+    {
+      date: '1994',
+      desc: 'Liga Indonesia dibentuk pada tahun 1994 sebagai kompetisi sepak bola profesional di Indonesia. Liga ini terdiri dari beberapa divisi dengan klub-klub dari berbagai daerah.',
+      img: character2,
+    },
+    {
+      date: '2008',
+      desc: 'PSSI menyelenggarakan Liga Super Indonesia sebagai liga sepak bola profesional di Indonesia menggantikan divisi utama. Kompetisi ini diikuti oleh 18 klub dari berbagai daerah di Indonesia.',
+      img: character3,
+    },
+    {
+      date: '2011',
+      desc: 'PSSI mengganti nama Liga Super Indonesia menjadi Liga Prima Indonesia. Kompetisi ini diikuti oleh 18 klub dari berbagai daerah di Indonesia.',
+      img: character4,
+    },
+    {
+      date: '2017 - sekarang',
+      desc: 'Kompetisi sepak bola profesional tertinggi di indonesia, yaitu Indonesia Supear League (ISL) berganti nama menjadi liga 1 dibawah kepemimpinan ketua PSSI yang baru, Edy Rahmayadi.',
+      img: character2,
     },
   ];
 
