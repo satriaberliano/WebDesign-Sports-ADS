@@ -299,14 +299,6 @@ header .nav-btn {
   font-size: 20px;
 }
 
-/* .soccer-top img {
-  position: absolute;
-  right: 525px;
-  bottom: 350px;
-  width: 500px;
-  z-index: 0;
-} */
-
 .soccer-top_text-button {
   display: flex;
   justify-content: center;
@@ -405,44 +397,39 @@ header .nav-btn {
 }
 
 .silat-top {
-  padding: 30px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.silat-top span {
-  font-family: 'Silkscreen', cursive;
-}
-
-.silat-top p {
+.type-writer-wrapper {
   background-image: url(/src/assets/pixel-speech-bubble.png);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: contain;
   font-family: 'Silkscreen', cursive;
-  font-size: 20px;
-  padding: 20px 10px 60px 10px;
   text-align: center;
-  z-index: 0;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translateX(-40%);
+  width: 31rem;
+  height: 10em;
+  padding: 20px;
 }
 
-/*.silat-top img {
-  position: absolute;
-  right: 525px;
-  bottom: 350px;
-  width: 500px;
-  z-index: 0;
+/* .silat-top span {
+  font-family: 'Silkscreen', cursive;
 } */
 
 .silat-top_text-button {
   display: flex;
   justify-content: center;
-  margin-top: 75px;
+  margin-top: 17em;
 }
 
 .silat-top_text-button img {
-  width: 10%;
+  width: 12em;
   margin: auto 60px;
-  aspect-ratio: 1;
 }
 
 .silat-top_text-button a {
@@ -487,4 +474,10 @@ header .nav-btn {
 .silat-obor-container .obor {
   /* position: absolute; */
   z-index: -1;
+}
+
+/* Type Writer */
+.type-writer {
+  font-size: 20px;
+  z-index: 0;
 }
