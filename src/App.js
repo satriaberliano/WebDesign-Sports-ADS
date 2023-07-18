@@ -8,7 +8,7 @@ import {
 } from "./routes";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import AppHeader from "./components/AppHeader";
+// import AppHeader from "./components/AppHeader";
 import Sports from "./pages/Sports";
 import SoccerPage from "./pages/SoccerPage";
 import SilatPage from "./pages/SilatPage";
@@ -16,7 +16,7 @@ import SilatPage from "./pages/SilatPage";
 function App() {
   return (
     <div className="App">
-      <AppHeader />
+      {/* <AppHeader /> */}
       <main>
         <Routes>
           {[rootPath, homePath].map((path, index) => (

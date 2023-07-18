@@ -17,11 +17,9 @@ function AppHeader() {
     <header>
       <div className="header-name">
         <p>
-          INDONESIA
+          ADS
           <br />
-          SPORTS
-          <br />
-          COMMUNITY
+          PROJECT
           <br />
         </p>
       </div>
