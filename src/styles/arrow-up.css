@@ -1,0 +1,14 @@
+/* Arrow Up */
+.back-to-top {
+  padding: 0;
+}
+
+.back-to-top > a {
+  margin-left: 7em;
+}
+
+.back-to-top > a > img {
+  position: relative;
+  margin-bottom: 0;
+  bottom: -10px;
+}

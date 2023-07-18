@@ -8,6 +8,7 @@ import character3 from '../../assets/img-sejarah/footbal-characters/football-ch-
 import character4 from '../../assets/img-sejarah/footbal-characters/football-ch-4.png';
 import FooterHistory from '../../components/FooterHistory';
 import BackgroundAwan from '../../components/BackgroundAwan';
+import ArrowUp from '../../components/ArrowUp';
 
 const FootballHistory = () => {
   const dataExperience = [
@@ -40,17 +41,6 @@ const FootballHistory = () => {
 
   return (
     <div className='sport-container'>
-      {/* <div className='background-awan-container'>
-        <div className='bg-awan1'>
-          <img src={awan} alt='background-awan' className='img-awan1' />
-        </div>
-        <div className='bg-awan2 '>
-          <img src={awan} alt='background-awan' className='img-awan2' />
-        </div>
-        <div className='bg-awan3'>
-          <img src={awan} alt='background-awan' className='img-awan3' />
-        </div>
-      </div> */}
       <BackgroundAwan />
       <div className='sport-section'>
         <div className='sport-content-1'>
@@ -113,6 +103,7 @@ const FootballHistory = () => {
           ))}
         </div>
       </div>
+      <ArrowUp />
       <FooterHistory />
     </div>
   );
