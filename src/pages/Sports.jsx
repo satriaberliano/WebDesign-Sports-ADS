@@ -6,7 +6,7 @@ import logoesports from "../assets/logo-sports/e-sports.png"
 import logobulutangkis from "../assets/logo-sports/bulu-tangkis.png"
 import logoangkatbesi from "../assets/logo-sports/angkat-besi.png"
 import { Link } from "react-router-dom";
-import { silatPath, soccerPath } from "../routes";
+import { badmintonPath, chessPath, eSportsPath, silatPath, soccerPath, weightLiftingPath } from "../routes";
 import rumput from "../assets/img-background/rumput.png";
 import AppHeader from "../components/AppHeader";
 
@@ -26,19 +26,19 @@ function Sports(){
               <img src={logosilat} alt="gambar silat"/>
               <p>Silat</p>
             </Link>
-            <Link className="sports-card">
+            <Link className="sports-card" to={chessPath}>
               <img src={logocatur} alt="gambar catur"/>
               <p>Catur</p>
             </Link>
-            <Link className="sports-card">
+            <Link className="sports-card" to={eSportsPath}>
               <img src={logoesports} alt="gambar e-sports"/>
               <p>E-Sports</p>
             </Link>
-            <Link className="sports-card">
+            <Link className="sports-card" to={badmintonPath}>
               <img src={logobulutangkis} alt="gambar bulu tangkis"/>
               <p>Bulu Tangkis</p>
             </Link>
-            <Link className="sports-card">
+            <Link className="sports-card" to={weightLiftingPath}>
               <img src={logoangkatbesi} alt="gambar angkat besi"/>
               <p>Angkat Besi</p>
             </Link>

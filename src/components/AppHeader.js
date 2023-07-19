@@ -17,9 +17,11 @@ function AppHeader() {
     <header>
       <div className="header-name">
         <p>
-          ADS
+          ADVENTURE
           <br />
-          PROJECT
+          IN INDONESIAN
+          <br />
+          SPORTS
           <br />
         </p>
       </div>
