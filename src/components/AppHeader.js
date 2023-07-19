@@ -17,11 +17,11 @@ function AppHeader() {
     <header>
       <div className="header-name">
         <p>
-          INDONESIA
+          ADVENTURE
+          <br />
+          IN INDONESIAN
           <br />
           SPORTS
-          <br />
-          COMMUNITY
           <br />
         </p>
       </div>
