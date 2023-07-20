@@ -6,3 +6,4 @@ export const aboutUsPath = '/tentang-kami';
 export const footballHistoryPath = '/football-history';
 export const silatHistoryPath = '/silat-history';
 export const caturHistoryPath = '/catur-history';
+export const esportHistoryPath = '/esport-history';
