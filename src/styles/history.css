@@ -86,7 +86,8 @@
 }
 
 /* silat */
-.bg-silat {
+.bg-silat,
+.bg-catur {
   position: fixed;
   z-index: -2;
   width: 100%;
@@ -98,4 +99,9 @@
   width: 55px;
   height: 80px;
   margin: auto;
+}
+
+/* catur */
+.sport-catur {
+  height: 98px;
 }
