@@ -895,7 +895,6 @@ header .nav-btn {
 .angkatbesi-awan-container {
   position: absolute;
   /* display: flex; */
-
 }
 
 .angkatbesi-awan-container img {
@@ -978,7 +977,7 @@ header .nav-btn {
 
 .aboutus-developer-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 75px;
@@ -1049,25 +1048,21 @@ header .nav-btn {
   #silat-page header nav ul li,
   #esports-page header nav ul li,
   #bulutangkis-page header nav ul li,
-  #angkatbesi-page header nav ul li
-  {
+  #angkatbesi-page header nav ul li {
     color: #000;
   }
 
   #silat-page header .nav-btn,
   #esports-page header .nav-btn,
   #bulutangkis-page header .nav-btn,
-  #angkatbesi-page header .nav-btn
-  {
+  #angkatbesi-page header .nav-btn {
     color: #fff;
   }
 
   #silat-page header .nav-close-btn,
   #esports-page header .nav-close-btn,
   #bulutangkis-page header .nav-close-btn,
-  #angkatbesi-page header .nav-close-btn
-  {
+  #angkatbesi-page header .nav-close-btn {
     color: #000;
   }
-
 }
