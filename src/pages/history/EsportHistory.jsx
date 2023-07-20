@@ -6,8 +6,8 @@ import bgEsport from '../../assets/img-sejarah/bg-esport.png';
 import BackgroundTanah from '../../components/BackgroundTanah';
 import ArrowUp from '../../components/ArrowUp';
 
-const SilatHistory = () => {
-  const dataExperience = [
+const EsportHistory = () => {
+  const dataHistory = [
     {
       date: 'Awal Kemunculan (Awal 2000-an)',
       desc: 'E-Sports mulai muncul di Indonesia pada awal tahun 2000-an dengan popularitas permainan video seperti Counter-Strike, Dota, dan Warcraft III. Turnamen kecil dan komunitas pemain video game mulai terbentuk di berbagai kota di Indonesia.',
@@ -43,7 +43,7 @@ const SilatHistory = () => {
       <img src={bgEsport} alt='bg-silat' className='bg-catur' />
       <div className='sport-section'>
         <div className='sport-content-1'>
-          {dataExperience.map((experience, id, arr) => (
+          {dataHistory.map((experience, id, arr) => (
             <div key={id} className='sport-data'>
               {(id + 1) % 2 !== 0 && (
                 <>
@@ -96,4 +96,4 @@ const SilatHistory = () => {
   );
 };
 
-export default SilatHistory;
+export default EsportHistory;

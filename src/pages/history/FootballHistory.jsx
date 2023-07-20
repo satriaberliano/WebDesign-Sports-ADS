@@ -11,7 +11,7 @@ import BackgroundAwan from '../../components/BackgroundAwan';
 import ArrowUp from '../../components/ArrowUp';
 
 const FootballHistory = () => {
-  const dataExperience = [
+  const dataHistory = [
     {
       date: '1893',
       desc: 'Sepak bola diperkenalkan pertama kali di Indonesia oleh orang-orang Belanda pada masa penjajahan kolonial. Olahraga ini dimainkan terutama oleh komunitas kolonial Belanda.',
@@ -64,7 +64,7 @@ const FootballHistory = () => {
       <BackgroundAwan />
       <div className='sport-section'>
         <div className='sport-content-1'>
-          {dataExperience.map((experience, id, arr) => (
+          {dataHistory.map((experience, id, arr) => (
             <div key={id} className='sport-data'>
               {(id + 1) % 2 !== 0 && (
                 <>

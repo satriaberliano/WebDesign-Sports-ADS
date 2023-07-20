@@ -7,8 +7,8 @@ import FooterHistory from '../../components/BackgroundTanah';
 import ArrowUp from '../../components/ArrowUp';
 import BackgroundAwan from '../../components/BackgroundAwan';
 
-const SilatHistory = () => {
-  const dataExperience = [
+const BadmintonHistory = () => {
+  const dataHistory = [
     {
       date: 'Pengenalan Badminton ke Indonesia (Abad ke-18 hingga ke-19)',
       desc: 'Badminton diperkenalkan ke Indonesia oleh pedagang Inggris pada abad ke-18 dan ke-19.Olahraga ini awalnya dikenal dengan sebutan "Poona" atau "Poonah" karena berasal dari kota Poona (kini Pune), India.',
@@ -53,7 +53,7 @@ const SilatHistory = () => {
       <BackgroundAwan />
       <div className='sport-section'>
         <div className='sport-content-1'>
-          {dataExperience.map((experience, id, arr) => (
+          {dataHistory.map((experience, id, arr) => (
             <div key={id} className='sport-data'>
               {(id + 1) % 2 !== 0 && (
                 <>
@@ -106,4 +106,4 @@ const SilatHistory = () => {
   );
 };
 
-export default SilatHistory;
+export default BadmintonHistory;

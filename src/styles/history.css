@@ -120,7 +120,8 @@
 }
 
 /* Badminton */
-.sport-badminton {
+.sport-badminton,
+.sport-lifting {
   height: 45px;
   position: relative;
 }

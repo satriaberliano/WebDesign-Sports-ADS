@@ -7,8 +7,8 @@ import BackgroundTanah from '../../components/BackgroundTanah';
 import ArrowUp from '../../components/ArrowUp';
 import BackgroundAwan from '../../components/BackgroundAwan';
 
-const SilatHistory = () => {
-  const dataExperience = [
+const CaturHistory = () => {
+  const dataHistory = [
     {
       date: 'Pengenalan Catur ke Indonesia:',
       desc: 'Catur diperkenalkan ke Indonesia melalui kontak dengan bangsa India pada zaman perdagangan maritim kuno. Permainan catur membawa konsep intelektual dan strategi yang menarik minat kalangan intelektual di Indonesia.',
@@ -45,7 +45,7 @@ const SilatHistory = () => {
       <BackgroundAwan />
       <div className='sport-section'>
         <div className='sport-content-1'>
-          {dataExperience.map((experience, id, arr) => (
+          {dataHistory.map((experience, id, arr) => (
             <div key={id} className='sport-data'>
               {(id + 1) % 2 !== 0 && (
                 <>
@@ -98,4 +98,4 @@ const SilatHistory = () => {
   );
 };
 
-export default SilatHistory;
+export default CaturHistory;
