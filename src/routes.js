@@ -7,3 +7,4 @@ export const footballHistoryPath = '/football-history';
 export const silatHistoryPath = '/silat-history';
 export const caturHistoryPath = '/catur-history';
 export const esportHistoryPath = '/esport-history';
+export const badmintonHistoryPath = '/badminton-history';

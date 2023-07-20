@@ -12,7 +12,7 @@ import angkatbesi from '../assets/img-background/angkatbesi.png';
 import badminton from '../assets/img-background/badminton.png';
 import caturKuda from '../assets/img-background/catur-kuda.png';
 import caturMenteri from '../assets/img-background/catur-menteri.png';
-import FooterHistory from '../components/FooterHistory';
+import FooterHistory from '../components/BackgroundTanah';
 import BackgroundAwan from '../components/BackgroundAwan';
 
 const Background = () => {

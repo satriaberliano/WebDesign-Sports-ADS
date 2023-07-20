@@ -41,6 +41,10 @@
   margin-top: 0;
 }
 
+.sport-line > img {
+  z-index: -5;
+}
+
 .data-item {
   display: flex;
   justify-content: center;
@@ -100,14 +104,23 @@
   width: 55px;
   height: 80px;
   margin: auto;
+  position: relative;
 }
 
 /* catur */
 .sport-catur {
   height: 98px;
+  position: relative;
 }
 
 /* game */
 .sport-game {
   height: 47px;
+  position: relative;
+}
+
+/* Badminton */
+.sport-badminton {
+  height: 45px;
+  position: relative;
 }

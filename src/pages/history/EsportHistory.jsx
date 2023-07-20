@@ -3,7 +3,7 @@ import '../../styles/history.css';
 import tali from '../../assets/img-sejarah/tali.png';
 import katak from '../../assets/img-sejarah/katak.png';
 import bgEsport from '../../assets/img-sejarah/bg-esport.png';
-import FooterHistory from '../../components/FooterHistory';
+import BackgroundTanah from '../../components/BackgroundTanah';
 import ArrowUp from '../../components/ArrowUp';
 
 const SilatHistory = () => {
@@ -91,7 +91,7 @@ const SilatHistory = () => {
         </div>
       </div>
       <ArrowUp />
-      <FooterHistory />
+      <BackgroundTanah />
     </div>
   );
 };

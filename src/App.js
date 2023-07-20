@@ -6,6 +6,7 @@ import {
   silatHistoryPath,
   caturHistoryPath,
   esportHistoryPath,
+  badmintonHistoryPath,
 } from './routes';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
@@ -14,6 +15,7 @@ import FootballHistory from './pages/history/FootballHistory';
 import SilatHistory from './pages/history/SilatHistory';
 import CaturHistory from './pages/history/CaturHistory';
 import EsportHistory from './pages/history/EsportHistory';
+import BadmintonHistory from './pages/history/BadmintonHistory';
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
           <Route path={silatHistoryPath} element={<SilatHistory />} />
           <Route path={caturHistoryPath} element={<CaturHistory />} />
           <Route path={esportHistoryPath} element={<EsportHistory />} />
+          <Route path={badmintonHistoryPath} element={<BadmintonHistory />} />
         </Routes>
       </main>
     </div>

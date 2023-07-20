@@ -6,7 +6,7 @@ import character1 from '../../assets/img-sejarah/footbal-characters/football-ch-
 import character2 from '../../assets/img-sejarah/footbal-characters/football-ch-2.png';
 import character3 from '../../assets/img-sejarah/footbal-characters/football-ch-3.png';
 import character4 from '../../assets/img-sejarah/footbal-characters/football-ch-4.png';
-import FooterHistory from '../../components/FooterHistory';
+import BackgroundTanah from '../../components/BackgroundTanah';
 import BackgroundAwan from '../../components/BackgroundAwan';
 import ArrowUp from '../../components/ArrowUp';
 
@@ -124,7 +124,7 @@ const FootballHistory = () => {
         </div>
       </div>
       <ArrowUp />
-      <FooterHistory />
+      <BackgroundTanah />
     </div>
   );
 };

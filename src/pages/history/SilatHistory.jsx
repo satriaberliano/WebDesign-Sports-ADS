@@ -4,7 +4,7 @@ import tali from '../../assets/img-sejarah/tali.png';
 import medali from '../../assets/img-sejarah/medali.png';
 import obor from '../../assets/img-sejarah/obor.gif';
 import bgSilat from '../../assets/img-sejarah/bg-silat.png';
-import FooterHistory from '../../components/FooterHistory';
+import BackgroundTanah from '../../components/BackgroundTanah';
 import ArrowUp from '../../components/ArrowUp';
 
 const SilatHistory = () => {
@@ -103,7 +103,7 @@ const SilatHistory = () => {
         </div>
       </div>
       <ArrowUp />
-      <FooterHistory />
+      <BackgroundTanah />
     </div>
   );
 };
