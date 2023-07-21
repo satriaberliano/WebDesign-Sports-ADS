@@ -7,7 +7,7 @@ import obor2 from '../assets/img-background/obor-gif.gif';
 import obor3 from '../assets/img-background/obor-gif.gif';
 import obor4 from '../assets/img-background/obor-gif.gif';
 import Typewriter from '../components/TyperWriter';
-import AppHeader from "../components/AppHeader";
+import AppHeader from '../components/AppHeader';
 
 function SilatPage() {
   const [typewriter1Visible, setTypewriter1Visible] = useState(false);
@@ -48,19 +48,19 @@ function SilatPage() {
       <div className='silat'>
         <div className='silat-background'>
           <img src={bangunan} alt='bangunan gelap' id='silat-bangunan' />
-          <div className='silat-obor-container'>
+          {/* <div className='silat-obor-container'>
             <div className='silat-obor-top'>
-              <img src={obor1} alt='obor' className='obor' id='silat-obor-1'/>
-              <img src={obor2} alt='obor' className='obor' id='silat-obor-2'/>
+              <img src={obor1} alt='obor' className='obor' id='silat-obor-1' />
+              <img src={obor2} alt='obor' className='obor' id='silat-obor-2' />
             </div>
             <div className='silat-obor-bottom'>
-              <img src={obor3} alt='obor' className='obor' id='silat-obor-3'/>
-              <img src={obor4} alt='obor' className='obor' id='silat-obor-4'/>
+              <img src={obor3} alt='obor' className='obor' id='silat-obor-3' />
+              <img src={obor4} alt='obor' className='obor' id='silat-obor-4' />
             </div>
             <div className='silat-batu-container'>
               <img src={batu} alt='batu' id='silat-batu' />
             </div>
-          </div>
+          </div> */}
         </div>
         <h3>Sejarah Silat di Indonesia</h3>
         <div className='silat-top'>

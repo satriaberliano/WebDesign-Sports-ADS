@@ -39,5 +39,11 @@
     right: 25px;
   }
 
+  .type-writer-wrapper {
+    width: 22em;
+  }
 
+  .type-writer {
+    font-size: 12px;
+  }
 }
