@@ -22,7 +22,7 @@ import LiftingHistory from './pages/history/LiftingHistory';
 function App() {
   return (
     <div className='App'>
-      <AppHeader />
+      {/* <AppHeader /> */}
       <main>
         <Routes>
           {[rootPath, homePath].map((path, index) => (

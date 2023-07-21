@@ -35,7 +35,8 @@
   height: 55px;
 }
 
-.sport-line {
+.sport-line,
+.sport-line-catur {
   margin: auto;
   width: 20px;
   margin-top: 0;
@@ -81,9 +82,9 @@
   height: 96%;
 }
 
-.sport-data:last-child .data-item {
+/* .sport-data:last-child .data-item {
   display: none;
-}
+} */
 
 .sport-data:last-child .gambar-kiri {
   visibility: hidden;
@@ -96,7 +97,9 @@
 /* silat */
 .bg-silat,
 .bg-catur,
-.bg-esport {
+.bg-esport,
+.bg-badminton,
+.bg-lifting {
   position: fixed;
   z-index: -2;
   width: 100%;
@@ -130,14 +133,9 @@
   position: relative;
 }
 
-/* Responsive */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Tambahkan kode CSS khusus untuk tablet di sini */
-}
-
 @media (max-width: 767px) {
   .sport-content-1 {
-    margin-bottom: 7em;
+    margin-bottom: 12em;
   }
   .data-item {
     display: none;
@@ -146,6 +144,7 @@
   .data-item-sm {
     width: 20em;
     display: block;
+    margin-top: 20px;
   }
 
   .gambar-kiri {
@@ -165,6 +164,31 @@
   }
 
   .lambang-wrapper {
+    width: 55px;
+  }
+
+  /* catur */
+  .simbol-wrapper-catur,
+  .lambang-wrapper-catur {
+    width: 50px;
+  }
+
+  .sport-line-catur > img {
+    height: 18em;
+  }
+
+  /* Badminton */
+  .lambang-wrapper-badminton {
+    width: 70px;
+  }
+
+  /* Esport */
+  .lambang-wrapper-esport {
+    width: 70px;
+  }
+
+  /* Silat */
+  .lambang-wrapper-silat {
     width: 55px;
   }
 }

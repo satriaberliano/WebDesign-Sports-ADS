@@ -19,7 +19,7 @@ const CaturHistory = () => {
     },
     {
       date: 'Keikutsertaan Pertama dalam Olimpiade Catur',
-      desc: 'Pada tahun 1950, Indonesia mengikuti Olimpiade Catur untuk pertama kalinya di Dubrovnik, Yugoslavia (sekarang Kroasia).Indonesia berpartisipasi sebagai negara non-anggota FIDE (Fédération Internationale des Échecs) pada saat itu. Islam di Nusantara pada abad ke-14 mempengaruhi perkembangan silat. Pencak silat diajarkan bersama-sama dengan pelajaran agama di surau atau pesantren. Silat menjadi bagian dari latihan spiritual dan budaya dalam beberapa suku bangsa di Indonesia.',
+      desc: 'Pada tahun 1950, Indonesia mengikuti Olimpiade Catur untuk pertama kalinya di Dubrovnik, Yugoslavia (sekarang Kroasia). Indonesia berpartisipasi sebagai negara non-anggota FIDE (Fédération Internationale des Échecs) pada saat itu.',
     },
     {
       date: 'Pembentukan Persatuan Catur Seluruh Indonesia (PECASI) (1953):',
@@ -31,11 +31,11 @@ const CaturHistory = () => {
     },
     {
       date: 'Perkembangan Prestasi Catur Indonesia',
-      desc: 'Indonesia terus menunjukkan perkembangan prestasi catur di tingkat internasional, baik dalam Olimpiade Catur maupun kompetisi-kompetisi lainnya. Beberapa caturawan Indonesia mencatat prestasi gemilang di tingkat nasional dan internasional. Keikutsertaan mereka membawa nama Indonesia sebagai salah satu negara dengan pemain catur yang mampu bersaing di tingkat dunia.',
+      desc: 'Indonesia terus menunjukkan perkembangan prestasi catur di tingkat internasional, baik dalam Olimpiade Catur maupun kompetisi-kompetisi lainnya. ',
     },
     {
       date: '',
-      desc: '',
+      desc: 'Beberapa caturawan Indonesia mencatat prestasi gemilang di tingkat nasional dan internasional. Keikutsertaan mereka membawa nama Indonesia sebagai salah satu negara dengan pemain catur yang mampu bersaing di tingkat dunia. Seperti  Herman Suradiradja. Herman Ardiansyah, Irene Kharisma Sukandar, Susanto Megaranto.',
     },
   ];
 
@@ -50,37 +50,40 @@ const CaturHistory = () => {
               {(id + 1) % 2 !== 0 && (
                 <>
                   <div className='gambar-kiri'></div>
-                  <div>
+                  <div className='simbol-wrapper-catur'>
                     <div className='sport-catur'>
                       <img src={catur} alt='catur' width='50' />
                     </div>
                     {id + 1 !== arr.length && (
-                      <div className='sport-line'>
+                      <div className='sport-line-catur'>
                         <img src={tali} alt='tali' width='20' />
                       </div>
                     )}
                   </div>
                 </>
               )}
-              <div key={id} className='data-item'>
+
+              <div className='data-item'>
                 <div className='data-item-content'>
                   <p className='sport-title'>{experience.date}</p>
                   <p className='sport-subtitle'>{experience.desc}</p>
                 </div>
               </div>
+
               {(id + 1) % 2 === 0 && id + 1 !== arr.length && (
                 <>
-                  <div className='lambang-wrapper'>
+                  <div className='lambang-wrapper-catur'>
                     <div className='sport-catur'>
                       <img src={catur} alt='catur' width='50' />
                     </div>
-                    <div className='sport-line'>
+                    <div className='sport-line-catur'>
                       <img src={tali} alt='tali' width='20' />
                     </div>
                   </div>
                   <div className='gambar-kiri'></div>
                 </>
               )}
+
               {id + 1 === arr.length && (id + 1) % 2 === 0 && (
                 <div className=''>
                   <div className='sport-catur'>
@@ -88,6 +91,13 @@ const CaturHistory = () => {
                   </div>
                 </div>
               )}
+
+              <div className='data-item-sm'>
+                <div className='data-item-content'>
+                  <p className='sport-title'>{experience.date}</p>
+                  <p className='sport-subtitle'>{experience.desc}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

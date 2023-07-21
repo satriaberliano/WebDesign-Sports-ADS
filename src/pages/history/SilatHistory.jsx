@@ -58,7 +58,7 @@ const SilatHistory = () => {
                   <div className='gambar-kiri'>
                     <img src={experience.img} alt='torch' width='55' />
                   </div>
-                  <div>
+                  <div className='lambang-wrapper-silat'>
                     <div className='sport-medal'>
                       <img src={medali} alt='medali' width='55' />
                     </div>
@@ -70,12 +70,14 @@ const SilatHistory = () => {
                   </div>
                 </>
               )}
+
               <div key={id} className='data-item'>
                 <div className='data-item-content'>
                   <p className='sport-title'>{experience.date}</p>
                   <p className='sport-subtitle'>{experience.desc}</p>
                 </div>
               </div>
+
               {(id + 1) % 2 === 0 && id + 1 !== arr.length && (
                 <>
                   <div className='lambang-wrapper'>
@@ -91,6 +93,7 @@ const SilatHistory = () => {
                   </div>
                 </>
               )}
+
               {id + 1 === arr.length && (id + 1) % 2 === 0 && (
                 <div className=''>
                   <div className='sport-medal'>
@@ -98,6 +101,13 @@ const SilatHistory = () => {
                   </div>
                 </div>
               )}
+
+              <div key={id} className='data-item-sm'>
+                <div className='data-item-content'>
+                  <p className='sport-title'>{experience.date}</p>
+                  <p className='sport-subtitle'>{experience.desc}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
