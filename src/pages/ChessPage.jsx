@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import chessAthlete from '../assets/athlete/chess-athlete.png';
 import Typewriter from '../components/TyperWriter';
-import AppHeader from "../components/AppHeader";
+import AppHeader from '../components/AppHeader';
 import bangunan from '../assets/img-background/bangunan-4.png';
-import tanah from "../assets/img-background/tanah-2.png";
-
 
 function ChessPage() {
   const [typewriter1Visible, setTypewriter1Visible] = useState(false);
@@ -44,10 +42,7 @@ function ChessPage() {
       <AppHeader />
       <div className='chess'>
         <div className='chess-background'>
-          <img src={bangunan} alt='bangunan terang' id='chess-bangunan'/>
-        <div className='chess-batu-container'>
-          <img src={tanah} alt='tanah' id='chess-tanah'/>
-        </div>
+          <img src={bangunan} alt='bangunan terang' id='chess-bangunan' />
         </div>
         <h3>Sejarah Catur di Indonesia</h3>
         <div className='chess-top'>
@@ -55,7 +50,10 @@ function ChessPage() {
             <>
               {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
               {typewriter2Visible && (
-                <Typewriter text='MARI KITA MULAI MEMPELAJARI SEJARAH' delay={100} />
+                <Typewriter
+                  text='MARI KITA MULAI MEMPELAJARI SEJARAH'
+                  delay={100}
+                />
               )}
               {typewriter3Visible && (
                 <Typewriter text='DARI CATUR DI INDONESIA' delay={100} />

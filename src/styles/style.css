@@ -417,9 +417,6 @@ header .nav-btn {
   height: 100vh;
   top: 0;
   z-index: -10;
-  /* background-color: #252551; */
-  /* background-image: url(../assets/img-background/silat-background.png); */
-  /* background-repeat: repeat-y */
 }
 
 .silat h3 {
@@ -441,7 +438,6 @@ header .nav-btn {
   position: absolute;
   top: 38.5%;
   width: 100%;
-  /* height: 30rem; */
 }
 
 .type-writer-wrapper {
@@ -606,28 +602,12 @@ header .nav-btn {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   z-index: -2;
 }
 
-.chess #chess-bangunan {
+.chess-background > img {
   width: 100%;
-  position: absolute;
-  aspect-ratio: 18/9;
-  z-index: -3;
-}
-
-.chess-tanah-container {
-  display: flex;
-  flex-direction: row;
-}
-
-.chess #chess-tanah {
-  width: 100%;
-  position: absolute;
-  z-index: -2;
-  bottom: -75px;
-  /* bottom: -175px; */
+  height: 100vh;
 }
 
 /* ====================================================== */

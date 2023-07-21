@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import silatAthlete from '../assets/athlete/silat-athlete.png';
 import bangunan from '../assets/img-background/bangunan-3.png';
-import batu from '../assets/img-background/batu.png';
 import obor1 from '../assets/img-background/obor-gif.gif';
 import obor2 from '../assets/img-background/obor-gif.gif';
 import obor3 from '../assets/img-background/obor-gif.gif';
@@ -48,7 +47,7 @@ function SilatPage() {
       <div className='silat'>
         <div className='silat-background'>
           <img src={bangunan} alt='bangunan gelap' id='silat-bangunan' />
-          {/* <div className='silat-obor-container'>
+          <div className='silat-obor-container'>
             <div className='silat-obor-top'>
               <img src={obor1} alt='obor' className='obor' id='silat-obor-1' />
               <img src={obor2} alt='obor' className='obor' id='silat-obor-2' />
@@ -57,10 +56,7 @@ function SilatPage() {
               <img src={obor3} alt='obor' className='obor' id='silat-obor-3' />
               <img src={obor4} alt='obor' className='obor' id='silat-obor-4' />
             </div>
-            <div className='silat-batu-container'>
-              <img src={batu} alt='batu' id='silat-batu' />
-            </div>
-          </div> */}
+          </div>
         </div>
         <h3>Sejarah Silat di Indonesia</h3>
         <div className='silat-top'>
