@@ -53,6 +53,10 @@
   margin: auto;
 }
 
+.data-item-sm {
+  display: none;
+}
+
 .data-item-content {
   background-color: #fff;
   color: #000;
@@ -124,4 +128,45 @@
 .sport-lifting {
   height: 45px;
   position: relative;
+}
+
+/* Responsive */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Tambahkan kode CSS khusus untuk tablet di sini */
+}
+
+@media (max-width: 767px) {
+  .sport-content-1 {
+    margin-bottom: 7em;
+  }
+  .data-item {
+    display: none;
+  }
+
+  .data-item-sm {
+    width: 20em;
+    display: block;
+  }
+
+  .gambar-kiri {
+    display: none;
+  }
+
+  .sport-line > img {
+    height: 18em;
+  }
+
+  .sport-data {
+    height: 18em;
+  }
+
+  .simbol-wrapper {
+    border: 1px solid green;
+    width: 55px;
+  }
+
+  .lambang-wrapper {
+    border: 1px solid green;
+    width: 55px;
+  }
 }

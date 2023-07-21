@@ -75,7 +75,7 @@ const FootballHistory = () => {
                       width='170'
                     />
                   </div>
-                  <div>
+                  <div className='simbol-wrapper'>
                     <div className='sport-rounder'>
                       <img src={bola} alt='bola' width='55' />
                     </div>
@@ -87,12 +87,14 @@ const FootballHistory = () => {
                   </div>
                 </>
               )}
+
               <div key={id} className='data-item'>
                 <div className='data-item-content'>
                   <p className='sport-title'>{experience.date}</p>
                   <p className='sport-subtitle'>{experience.desc}</p>
                 </div>
               </div>
+
               {(id + 1) % 2 === 0 && id + 1 !== arr.length && (
                 <>
                   <div className='lambang-wrapper'>
@@ -112,6 +114,7 @@ const FootballHistory = () => {
                   </div>
                 </>
               )}
+
               {id + 1 === arr.length && (id + 1) % 2 === 0 && (
                 <div className=''>
                   <div className='sport-rounder'>
@@ -119,6 +122,13 @@ const FootballHistory = () => {
                   </div>
                 </div>
               )}
+
+              <div key={id} className='data-item-sm'>
+                <div className='data-item-content'>
+                  <p className='sport-title'>{experience.date}</p>
+                  <p className='sport-subtitle'>{experience.desc}</p>
+                </div>
+              </div>
             </div>
           ))}
         </div>
