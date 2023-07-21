@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from '../components/TyperWriter';
-import AppHeader from "../components/AppHeader";
-import ghostPacman from "../assets/img-background/ghost-pacman.png";
-import background from "../assets/img-background/esports-background.png";
-import batu from '../assets/img-background/batu-2.png';
+import AppHeader from '../components/AppHeader';
+import ghostPacman from '../assets/img-background/ghost-pacman.png';
+import background from '../assets/img-background/esports-background.png';
 
 function ESportsPage() {
   const [typewriter1Visible, setTypewriter1Visible] = useState(false);
@@ -43,10 +42,11 @@ function ESportsPage() {
       <AppHeader />
       <div className='esports'>
         <div className='esports-background'>
-          <img src={background} alt='esports background' id='esports-background'/>
-          <div className='esports-batu-container'>
-            <img src={batu} alt='batu' id='esports-batu'/>
-          </div>
+          <img
+            src={background}
+            alt='esports background'
+            id='esports-background'
+          />
         </div>
         <h3>Sejarah E-Sports di Indonesia</h3>
         <div className='esports-top'>
@@ -54,7 +54,10 @@ function ESportsPage() {
             <>
               {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
               {typewriter2Visible && (
-                <Typewriter text='MARI KITA MULAI MEMPELAJARI SEJARAH' delay={100} />
+                <Typewriter
+                  text='MARI KITA MULAI MEMPELAJARI SEJARAH'
+                  delay={100}
+                />
               )}
               {typewriter3Visible && (
                 <Typewriter text='DARI E-SPORTS DI INDONESIA' delay={100} />
