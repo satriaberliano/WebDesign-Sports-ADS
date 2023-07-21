@@ -774,12 +774,12 @@ header .nav-btn {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   z-index: -2;
 }
 
 .bulutangkis #bulutangkis-background {
   width: 100%;
+  height: 100vh;
   position: absolute;
   z-index: -2;
 }
@@ -791,16 +791,7 @@ header .nav-btn {
   color: #fff;
 }
 
-.angkatbesi {
-  position: absolute;
-  width: 100%;
-  top: -5px;
-  z-index: -10;
-  background-image: url(../assets/img-background/weightlifting-background.png);
-  background-repeat: repeat;
-}
-
-.angkatbesi h3 {
+.angkatbesi-page > h3 {
   font-family: 'Press Start 2P', sans-serif;
   text-align: center;
   font-size: 38px;
@@ -852,38 +843,20 @@ header .nav-btn {
 
 .angkatbesi-background {
   position: absolute;
+  top: 0;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   z-index: -2;
 }
 
-.angkatbesi #angkatbesi-background {
+.angkatbesi-background > img {
   width: 100%;
+  height: 100vh;
   position: absolute;
   z-index: -2;
-}
-
-.angkatbesi-awan-container {
-  position: absolute;
-  /* display: flex; */
-}
-
-.angkatbesi-awan-container img {
-  z-index: -10;
-  width: 90%;
-}
-
-.angkatbesi-batu-container {
-  display: flex;
-}
-
-.angkatbesi-batu-container img {
-  width: 100%;
-  z-index: 2;
 }
 
 /* ====================================================== */

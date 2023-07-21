@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from '../components/TyperWriter';
-import AppHeader from "../components/AppHeader";
-import weightliftingAthlete from "../assets/athlete/weightlifting-athlete.png";
-import batu from "../assets/img-background/batu-3.png";
-import awan from "../assets/img-background/awan-2.png";
+import AppHeader from '../components/AppHeader';
+import weightliftingAthlete from '../assets/athlete/weightlifting-athlete.png';
+import background from '../assets/img-background/lifting-background.png';
 
 function WeightLiftingPage() {
   const [typewriter1Visible, setTypewriter1Visible] = useState(false);
@@ -39,41 +38,37 @@ function WeightLiftingPage() {
   }, []);
 
   return (
-    <div id='angkatbesi-page'>
+    <div id='angkatbesi-page' className='angkatbesi-page'>
       <AppHeader />
-      <div className='angkatbesi'>
-        {/* <div className='angkatbesi-background'>
-          <img src={background} alt='angkat besi background' id='angkatbesi-background'/>
-          <div className='esports-batu-container'>
-            <img src={batu} alt='batu' id='esports-batu'/>
-          </div>
-        </div> */}
-        <div className='angkatbesi-awan-container'>
-          <img src={awan} alt='awan malam'/>
+      <div className='angkatbesi-background'>
+        <img
+          src={background}
+          alt='angkat besi background'
+          id='angkatbesi-background'
+        />
+      </div>
+      <h3>Sejarah Angkat Besi di Indonesia</h3>
+      <div className='angkatbesi-top'>
+        <div className='type-writer-wrapper'>
+          <>
+            {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
+            {typewriter2Visible && (
+              <Typewriter
+                text='MARI KITA MULAI MEMPELAJARI SEJARAH'
+                delay={100}
+              />
+            )}
+            {typewriter3Visible && (
+              <Typewriter text='DARI ANGKAT BESI DI INDONESIA' delay={100} />
+            )}
+            {typewriter4Visible && (
+              <Typewriter text='TEKAN START UNTUK MEMULAI.' delay={100} />
+            )}
+          </>
         </div>
-        <h3>Sejarah Angkat Besi di Indonesia</h3>
-        <div className='angkatbesi-top'>
-          <div className='type-writer-wrapper'>
-            <>
-              {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
-              {typewriter2Visible && (
-                <Typewriter text='MARI KITA MULAI MEMPELAJARI SEJARAH' delay={100} />
-              )}
-              {typewriter3Visible && (
-                <Typewriter text='DARI ANGKAT BESI DI INDONESIA' delay={100} />
-              )}
-              {typewriter4Visible && (
-                <Typewriter text='TEKAN START UNTUK MEMULAI.' delay={100} />
-              )}
-            </>
-          </div>
-          <div className='angkatbesi-top_text-button'>
-            <img src={weightliftingAthlete} alt='weight lifting athlete'></img>
-            <a href='/#'>START</a>
-          </div>
-        </div>
-        <div className='angkatbesi-batu-container'>
-          <img src={batu} alt='batu'/>
+        <div className='angkatbesi-top_text-button'>
+          <img src={weightliftingAthlete} alt='weight lifting athlete'></img>
+          <a href='/#'>START</a>
         </div>
       </div>
     </div>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from '../components/TyperWriter';
-import AppHeader from "../components/AppHeader";
-import badmintonAthlete from "../assets/athlete/badminton-athlete.png";
-import background from "../assets/img-background/badminton-background.png";
+import AppHeader from '../components/AppHeader';
+import badmintonAthlete from '../assets/athlete/badminton-athlete.png';
+import background from '../assets/img-background/badminton-background.png';
 
 function BadmintonPage() {
   const [typewriter1Visible, setTypewriter1Visible] = useState(false);
@@ -42,10 +42,11 @@ function BadmintonPage() {
       <AppHeader />
       <div className='bulutangkis'>
         <div className='bulutangkis-background'>
-          <img src={background} alt='bulu tangkis background' id='bulutangkis-background'/>
-          {/* <div className='esports-batu-container'>
-            <img src={batu} alt='batu' id='esports-batu'/>
-          </div> */}
+          <img
+            src={background}
+            alt='bulu tangkis background'
+            id='bulutangkis-background'
+          />
         </div>
         <h3>Sejarah Bulu Tangkis di Indonesia</h3>
         <div className='bulutangkis-top'>
@@ -53,7 +54,10 @@ function BadmintonPage() {
             <>
               {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
               {typewriter2Visible && (
-                <Typewriter text='MARI KITA MULAI MEMPELAJARI SEJARAH' delay={100} />
+                <Typewriter
+                  text='MARI KITA MULAI MEMPELAJARI SEJARAH'
+                  delay={100}
+                />
               )}
               {typewriter3Visible && (
                 <Typewriter text='DARI BULU TANGKIS DI INDONESIA' delay={100} />
