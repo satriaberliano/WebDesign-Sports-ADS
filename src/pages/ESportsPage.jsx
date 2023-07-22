@@ -44,9 +44,6 @@ function ESportsPage() {
       <div className='esports'>
         <div className='esports-background'>
           <img src={background} alt='esports background' id='esports-background'/>
-          <div className='esports-batu-container'>
-            <img src={batu} alt='batu' id='esports-batu'/>
-          </div>
         </div>
         <h3>Sejarah E-Sports di Indonesia</h3>
         <div className='esports-top'>
@@ -69,6 +66,9 @@ function ESportsPage() {
             <a href='/#'>START</a>
           </div>
         </div>
+        <div className='esports-batu-container'>
+            <img src={batu} alt='batu' id='esports-batu'/>
+          </div>
       </div>
     </div>
   );

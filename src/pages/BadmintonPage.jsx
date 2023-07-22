@@ -3,6 +3,8 @@ import Typewriter from '../components/TyperWriter';
 import AppHeader from "../components/AppHeader";
 import badmintonAthlete from "../assets/athlete/badminton-athlete.png";
 import background from "../assets/img-background/badminton-background.png";
+import tanah from "../assets/img-background/tanah-3.png";
+import tanaman from "../assets/img-background/tanaman-3.png";
 
 function BadmintonPage() {
   const [typewriter1Visible, setTypewriter1Visible] = useState(false);
@@ -43,11 +45,14 @@ function BadmintonPage() {
       <div className='bulutangkis'>
         <div className='bulutangkis-background'>
           <img src={background} alt='bulu tangkis background' id='bulutangkis-background'/>
-          {/* <div className='esports-batu-container'>
-            <img src={batu} alt='batu' id='esports-batu'/>
-          </div> */}
+          <div className='esports-tanaman-container'>
+            <div className='esports-tanaman'>
+              <img src={tanaman} alt='tanaman' id='esports-tanaman-kiri'/>
+              <img src={tanaman} alt='tanaman' id='esports-tanaman-kanan'/>
+            </div>
+          </div>
         </div>
-        <h3>Sejarah Bulu Tangkis di Indonesia</h3>
+        <h3>Sejarah Badminton di Indonesia</h3>
         <div className='bulutangkis-top'>
           <div className='type-writer-wrapper'>
             <>
@@ -67,6 +72,13 @@ function BadmintonPage() {
             <img src={badmintonAthlete} alt='badminton athlete'></img>
             <a href='/#'>START</a>
           </div>
+        </div>
+        {/* <div className='esports-tanaman-container'>
+          <img src={tanaman} alt='tanaman' className='esports-tanaman-kiri'/>
+          <img src={tanaman} alt='tanaman' className='esports-tanaman-kanan'/>
+        </div> */}
+        <div className='esports-batu-container'>
+          <img src={tanah} alt='batu' id='esports-batu'/>
         </div>
       </div>
     </div>

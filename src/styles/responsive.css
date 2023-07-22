@@ -1,4 +1,10 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
+  .bulutangkis h3 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 834px) {
   header .navigation {
     position: fixed;
     top: 0;
@@ -33,11 +39,153 @@
     transform: none;
   }
 
+  header .header-name {
+    font-size: 12px;  
+  }
+
   nav .nav-close-btn {
     position: absolute;
     top: 20px;
     right: 25px;
   }
 
+  .type-writer-wrapper {
+    width: 22em;
+  }
+
+  .type-writer {
+    font-size: 12px;
+  }
+
+  .footer {
+    padding: 50px 75px;
+  }
+
+  /* ==================================== */
+
+  .sports-container h3 {
+    font-size: 28px;
+  }
+
+  .sports-type-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 75px;
+    padding: 0 25px;
+  }
+
+  .sports-card p {
+    font-size: 14px;
+  }
+
+  /* =================================== */
+
+  .reference-container h3 {
+    font-size: 28px;
+  }
+
+  /* =================================== */
+  .soccer h3,
+  .silat h3,
+  .chess h3,
+  .esports h3,
+  .bulutangkis h3,
+  .angkatbesi h3 {
+    font-size: 23px;
+    margin-top: 4em;
+    padding: 20px;
+  }
+
+  .soccer-top .type-writer-wrapper,
+  .silat-top .type-writer-wrapper,
+  .chess-top .type-writer-wrapper,
+  .esports-top .type-writer-wrapper,
+  .bulutangkis-top .type-writer-wrapper,
+  .angkatbesi-top .type-writer-wrapper {
+    width: 22em;
+    height: 5.25em;
+    font-size: 14px;
+  }
+
+  .soccer-top_text-button {
+    margin-top: 16.5em;
+  }
+
+  .soccer-top .type-writer-wrapper {
+    top: 50%;
+  }
+
+  .silat-top .type-writer-wrapper {
+    top: 40%;
+  }
+
+  .chess-top .type-writer-wrapper {
+    left: 45%;
+    top: 40%;
+  }
+
+  .esports-top .type-writer-wrapper {
+    top: 40%;
+  }
+
+  .bulutangkis-top .type-writer-wrapper {
+    left: 48.5%;
+    top: 40%;
+  }
+
+  .angkatbesi-top .type-writer-wrapper {
+    left: 47%;
+    top: 40%;
+  }
+
+
+
+  .silat-obor-container .obor {
+    width: 2rem;
+  }
+
+  .angkatbesi-awan-container img {
+    z-index: -10;
+    height: 40rem;
+  }
+
+
+
+  .soccer-top_text-button img {
+    width: 8em;
+  }
+
+  .chess-top_text-button img {
+    width: 5em;
+  }
+
+  .esports-top_text-button img {
+    width: 10em;
+  }
+
+  .bulutangkis-top_text-button img {
+    width: 9em;
+  }
+
+  .angkatbesi-top_text-button img {
+    width: 9em;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+
+  .sports-container h3 {
+    font-size: 20px;
+  }
+
+  .sports-type-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    column-gap: 75px;
+    padding: 0 25px;
+  }
 
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   rootPath,
   homePath,
@@ -10,23 +10,24 @@ import {
   aboutUsPath,
   badmintonPath,
   weightLiftingPath,
-} from "./routes";
-import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+  referencePath,
+} from './routes';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
 // import AppHeader from "./components/AppHeader";
-import Sports from "./pages/Sports";
-import SoccerPage from "./pages/SoccerPage";
-import SilatPage from "./pages/SilatPage";
-import ChessPage from "./pages/ChessPage";
-import ESportsPage from "./pages/ESportsPage";
-import AboutUsPage from "./pages/AboutUsPage";
-import BadmintonPage from "./pages/BadmintonPage";
-import WeightLiftingPage from "./pages/WeightLiftingPage";
+import Sports from './pages/Sports';
+import SoccerPage from './pages/SoccerPage';
+import SilatPage from './pages/SilatPage';
+import ChessPage from './pages/ChessPage';
+import ESportsPage from './pages/ESportsPage';
+import AboutUsPage from './pages/AboutUsPage';
+import BadmintonPage from './pages/BadmintonPage';
+import WeightLiftingPage from './pages/WeightLiftingPage';
+import ReferencePage from './pages/ReferencePage';
 
 function App() {
   return (
-    <div className="App">
-      {/* <AppHeader /> */}
+    <div className='App'>
       <main>
         <Routes>
           {[rootPath, homePath].map((path, index) => (
@@ -40,6 +41,7 @@ function App() {
           <Route path={aboutUsPath} element={<AboutUsPage />} />
           <Route path={badmintonPath} element={<BadmintonPage />} />
           <Route path={weightLiftingPath} element={<WeightLiftingPage />} />
+          <Route path={referencePath} element={<ReferencePage />} />
         </Routes>
       </main>
     </div>

@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import chessAthlete from '../assets/athlete/chess-athlete.png';
 import Typewriter from '../components/TyperWriter';
 import AppHeader from "../components/AppHeader";
-import bangunan from '../assets/img-background/bangunan-4.png';
 import tanah from "../assets/img-background/tanah-2.png";
+import backgroundTop from "../assets/img-background/catur-background.png";
 
 
 function ChessPage() {
@@ -44,10 +44,7 @@ function ChessPage() {
       <AppHeader />
       <div className='chess'>
         <div className='chess-background'>
-          <img src={bangunan} alt='bangunan terang' id='chess-bangunan'/>
-        <div className='chess-batu-container'>
-          <img src={tanah} alt='tanah' id='chess-tanah'/>
-        </div>
+          <img src={backgroundTop} alt='background catur' id='chess-view'/>
         </div>
         <h3>Sejarah Catur di Indonesia</h3>
         <div className='chess-top'>
@@ -69,6 +66,9 @@ function ChessPage() {
             <img src={chessAthlete} alt='bidak catur'></img>
             <a href='/#'>START</a>
           </div>
+        </div>
+        <div className='chess-tanah-container'>
+          <img src={tanah} alt='tanah gersang'/>
         </div>
       </div>
     </div>
