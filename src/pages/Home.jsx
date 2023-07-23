@@ -25,10 +25,9 @@ function Home() {
             <span>Mulai Jelajah</span>
           </Link>
         </div>
-        <AppFooter />
       </div>
+      <AppFooter />
     </>
-    
   );
 }
 

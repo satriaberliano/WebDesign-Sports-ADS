@@ -81,6 +81,7 @@ header .nav-btn {
   color: var(--text-color-white);
   background-color: var(--dirt);
   text-decoration: none;
+  position: relative;
 }
 
 .footer-top {
@@ -163,6 +164,7 @@ header .nav-btn {
 
 .home {
   text-align: center;
+  height: 100vh;
 }
 
 .home-container {
@@ -171,6 +173,7 @@ header .nav-btn {
   text-align: center;
   padding: 70px 0 0 0;
   z-index: 5;
+  border: 2px solid erd;
 }
 
 .home-slogan {
@@ -215,8 +218,8 @@ header .nav-btn {
   transition: 0.2s ease-in;
 }
 
-.home .footer {
-  margin-top: 230px;
+.footer {
+  position: relative;
 }
 
 /* ====================================================== */
@@ -284,6 +287,8 @@ header .nav-btn {
 
 .soccer {
   z-index: 5;
+  position: relative;
+  margin-top: 100px;
 }
 
 .soccer h3 {
@@ -506,7 +511,7 @@ header .nav-btn {
 .silat-batu-container #silat-batu {
   width: 100%;
   aspect-ratio: 6;
-} 
+}
 
 .silat-obor-container {
   position: absolute;
@@ -970,7 +975,7 @@ header .nav-btn {
 
 .reference-container {
   padding: 30px 0;
-  margin: 10px 0;
+  /* margin: 10px 0; */
 }
 
 .reference-container h3 {
@@ -1003,6 +1008,8 @@ header .nav-btn {
 
 .reference-tanah-container {
   display: flex;
+  position: relative;
+  bottom: -2px;
 }
 
 .reference-tanah-container img {
@@ -1042,7 +1049,6 @@ header .nav-btn {
   width: 16rem;
 }
 
-
 .aboutus-developer-identity {
   padding: 30px;
   text-align: center;
@@ -1070,7 +1076,7 @@ header .nav-btn {
   font-weight: 600;
   font-family: 'Roboto Mono', monospace;
   padding: 10px 30px;
-  background-color: #FFEB37;
+  background-color: #ffeb37;
   border: 2px solid black;
   border-radius: 8px;
   box-shadow: 2px 2px 2px 0 black;
@@ -1078,7 +1084,7 @@ header .nav-btn {
 }
 
 .aboutus-developer-identity a:hover {
-  background-color: #F3A229;
+  background-color: #f3a229;
   transition: 0.25s ease-in-out;
 }
 
