@@ -158,6 +158,10 @@
     position: relative;
     top: 115px;
   }
+
+  .background-bangunan-container {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1440px) {
