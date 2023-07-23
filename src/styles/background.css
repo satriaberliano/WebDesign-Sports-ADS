@@ -191,13 +191,17 @@
   }
   .bg-angkatbesi {
     max-width: 130px;
-    left: 58%;
+    left: 56%;
   }
 
   .bg-football,
   .bg-taekwondo,
   .bg-pebulutangkis {
     max-width: 100px;
+  }
+
+  .bg-taekwondo {
+    left: 37%;
   }
 
   .bendera {
