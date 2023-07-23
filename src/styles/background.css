@@ -205,11 +205,33 @@
   }
 
   .home-container {
-    top: 80px;
+    top: 100px;
   }
 
   .bendera {
     left: 50px;
+    width: 100px;
+    height: 400px;
+  }
+
+  .bg-tanaman-1,
+  .bg-tanaman-2 {
+    width: 12em;
+  }
+
+  .bg-tanaman-1 {
+    position: relative;
+    left: -90px;
+    bottom: 0;
+  }
+
+  .bg-tanaman-2 {
+    right: -90px;
+  }
+
+  .bg-rumput {
+    width: 80%;
+    height: 60px;
   }
 
   @keyframes slideTop {
@@ -217,10 +239,10 @@
       transform: translateY(150%);
     }
     45% {
-      transform: translateY(30%);
+      transform: translateY(50%);
     }
     55% {
-      transform: translateY(30%);
+      transform: translateY(50%);
     }
     100% {
       transform: translateY(150%);
