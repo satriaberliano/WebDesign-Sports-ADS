@@ -1,8 +1,3 @@
-/* Arrow Up */
-.back-to-top {
-  padding: 0;
-}
-
 .back-to-top > a {
   margin-left: 7em;
 }
@@ -11,4 +6,20 @@
   position: relative;
   margin-bottom: 0;
   bottom: -10px;
+}
+
+@media screen and (max-width: 834px) {
+  .back-to-top > a > img {
+    width: 15em;
+  }
+
+  .back-to-top {
+    margin-top: -100px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .back-to-top > a > img {
+    width: 12em;
+  }
 }

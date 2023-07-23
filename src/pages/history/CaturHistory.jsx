@@ -65,7 +65,6 @@ const CaturHistory = () => {
 
               <div className='data-item'>
                 <div className='data-item-content'>
-                  <p className='sport-title'>{experience.date}</p>
                   <p className='sport-subtitle'>{experience.desc}</p>
                 </div>
               </div>
@@ -94,7 +93,6 @@ const CaturHistory = () => {
 
               <div className='data-item-sm'>
                 <div className='data-item-content'>
-                  <p className='sport-title'>{experience.date}</p>
                   <p className='sport-subtitle'>{experience.desc}</p>
                 </div>
               </div>
