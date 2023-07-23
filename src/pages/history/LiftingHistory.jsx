@@ -10,31 +10,31 @@ const LiftingHistory = () => {
   const dataHistory = [
     {
       date: '',
-      desc: 'Nenek moyang bangsa Indonesia mengembangkan cara pembelaan diri yang menirukan gerakan binatang di alam sekitar. Keterampilan bela diri suku-suku asli Indonesia berkembang melalui berburu dan berperang dengan menggunakan parang, perisai, dan tombak.',
+      desc: 'Angkat besi diperkenalkan ke Indonesia pada era kolonial Belanda. Olahraga ini awalnya dikenal dengan sebutan "berat" atau "angkat berat."',
     },
     {
       date: '',
-      desc: 'Silat diturunkan secara lisan dan diwariskan dari guru ke murid. Beragam legenda mengenai asal mula silat, seperti legenda Minangkabau yang mengisahkan Datuk Suri Diraja menciptakan silek di Pariangan, Tanah Datar pada abad ke-11.Tokoh persilatan (pendekar) menjadi banggaan di setiap daerah, misalnya Prabu Siliwangi, Hang Tuah, Gajah Mada, dan Si Pitung.',
+      desc: 'Angkat besi mulai berkembang sebagai olahraga di Indonesia pada tahun 1940-an dan 1950-an. Para atlet Indonesia mulai berpartisipasi dalam kompetisi regional dan nasional.',
     },
     {
       date: '',
-      desc: 'Penyebaran Islam di Nusantara pada abad ke-14 mempengaruhi perkembangan silat. Pencak silat diajarkan bersama-sama dengan pelajaran agama di surau atau pesantren. Silat menjadi bagian dari latihan spiritual dan budaya dalam beberapa suku bangsa di Indonesia.',
+      desc: 'Pada tanggal 5 Mei 1962, Persatuan Angkat Besi Seluruh Indonesia (PABSI) resmi didirikan. PABSI bertujuan untuk mengatur dan mengembangkan olahraga angkat besi di Indonesia serta mewakili Indonesia di tingkat internasional.',
     },
     {
       date: '',
-      desc: 'Silat digunakan sebagai ilmu beladiri dalam perjuangan melawan penjajah Belanda. Para pendekar seperti Panembahan Senopati, Sultan Agung, Pangeran Diponegoro, Teungku Chik di Tiro, Teuku Umar, Tuanku Imam Bonjol, Sabai Nan Aluih, Cut Nyak Dhien, dan Cut Nyak Meutia mengangkat senjata dalam perjuangan melawan penjajah.',
+      desc: 'Pada Asian Games tahun 1962 di Jakarta, Indonesia meraih medali emas pertama dalam cabang olahraga angkat besi. Prestasi ini menjadi momen bersejarah bagi perkembangan angkat besi Indonesia.',
     },
     {
       date: '',
-      desc: 'Pada tanggal 18 Mei 1948, terbentuklah Ikatan Pencak Silat Indonesia (IPSI) sebagai organisasi pencak silat nasional pertama di Indonesia. Pada 11 Maret 1980, Persatuan Pencak Silat Antarbangsa (Persilat) didirikan atas prakarsa Eddie M. Nalapraya, dan Indonesia bersama Malaysia, Singapura, dan Brunei termasuk pendiri Persilat.',
+      desc: 'Pada tahun 1970-an dan 1980-an, atlet angkat besi Indonesia terus menunjukkan prestasi gemilang dalam kompetisi regional dan internasional. Prestasi atlet Indonesia di ajang Kejuaraan Asia dan SEA Games semakin meningkat.',
     },
     {
       date: '',
-      desc: 'Silat diakui sebagai bagian dari budaya Suku Melayu dalam pengertian yang luas, mencakup penduduk pulau Sumatra, Semenanjung Malaka, Jawa, Bali, Kalimantan, Sulawesi, dan pulau-pulau lainnya yang menggunakan bahasa Melayu. Pencak silat menjadi tak terpisahkan dari upacara adat dan kesenian masyarakat di berbagai daerah.',
+      desc: 'Pada Olimpiade Athena 2004, atlet angkat besi Indonesia, Eko Yuli Irawan, meraih medali emas pertama untuk Indonesia di cabang olahraga angkat besi.',
     },
     {
       date: '',
-      desc: 'Perguruan-perguruan silat tumbuh di Amerika Serikat dan Eropa. Silat diakui sebagai cabang olahraga dalam pertandingan internasional, khususnya dipertandingkan dalam ajang SEA Games.',
+      desc: 'Prestasi atlet angkat besi Indonesia terus berkembang hingga saat ini. Indonesia terus mengirimkan atlet yang berkompetisi di Kejuaraan Dunia Angkat Besi, Olimpiade, Asian Games, dan SEA Games.',
     },
   ];
 
@@ -48,7 +48,7 @@ const LiftingHistory = () => {
               {(id + 1) % 2 !== 0 && (
                 <>
                   <div className='gambar-kiri'></div>
-                  <div>
+                  <div className='simbol-wrapper'>
                     <div className='sport-lifting'>
                       <img src={beban} alt='beban' width='55' />
                     </div>

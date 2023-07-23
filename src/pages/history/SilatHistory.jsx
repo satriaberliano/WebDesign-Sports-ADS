@@ -50,9 +50,9 @@ const SilatHistory = () => {
     <div className='sport-container'>
       <img src={bgSilat} alt='bg-silat' className='bg-silat' />
       <div className='sport-section'>
-        <div className='sport-content-1'>
+        <div className='sport-content-1 sport-content-silat'>
           {dataExperience.map((experience, id, arr) => (
-            <div key={id} className='sport-data'>
+            <div key={id} className='sport-data sport-data-silat'>
               {(id + 1) % 2 !== 0 && (
                 <>
                   <div className='gambar-kiri'>
@@ -71,16 +71,15 @@ const SilatHistory = () => {
                 </>
               )}
 
-              <div key={id} className='data-item'>
+              <div className='data-item'>
                 <div className='data-item-content'>
-                  <p className='sport-title'>{experience.date}</p>
                   <p className='sport-subtitle'>{experience.desc}</p>
                 </div>
               </div>
 
               {(id + 1) % 2 === 0 && id + 1 !== arr.length && (
                 <>
-                  <div className='lambang-wrapper'>
+                  <div className='lambang-wrapper-silat'>
                     <div className='sport-medal'>
                       <img src={medali} alt='medali' width='55' />
                     </div>
@@ -104,7 +103,6 @@ const SilatHistory = () => {
 
               <div key={id} className='data-item-sm'>
                 <div className='data-item-content'>
-                  <p className='sport-title'>{experience.date}</p>
                   <p className='sport-subtitle'>{experience.desc}</p>
                 </div>
               </div>

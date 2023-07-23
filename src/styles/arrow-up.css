@@ -12,10 +12,6 @@
   .back-to-top > a > img {
     width: 15em;
   }
-
-  .back-to-top {
-    margin-top: -100px;
-  }
 }
 
 @media screen and (max-width: 390px) {

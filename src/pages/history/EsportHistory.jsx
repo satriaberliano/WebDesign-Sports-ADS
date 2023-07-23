@@ -44,11 +44,11 @@ const EsportHistory = () => {
       <div className='sport-section'>
         <div className='sport-content-1'>
           {dataHistory.map((experience, id, arr) => (
-            <div key={id} className='sport-data'>
+            <div key={id} className='sport-data sport-data-esport'>
               {(id + 1) % 2 !== 0 && (
                 <>
                   <div className='gambar-kiri'></div>
-                  <div className='lambang-wrapper-esport'>
+                  <div className='lambang-wrapper-esport simbol-wrapper-esport'>
                     <div className='sport-game'>
                       <img src={katak} alt='katak' width='70' />
                     </div>
@@ -89,9 +89,8 @@ const EsportHistory = () => {
                 </div>
               )}
 
-              <div className='data-item-sm'>
+              <div className='data-item-sm data-item-sm-esport'>
                 <div className='data-item-content'>
-                  <p className='sport-title'>{experience.date}</p>
                   <p className='sport-subtitle'>{experience.desc}</p>
                 </div>
               </div>

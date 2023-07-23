@@ -13,12 +13,21 @@
   width: 80%;
 }
 
-.sport-data {
+.sport-data,
+.sport-data-football {
   display: grid;
   grid-template-columns: 1fr max-content 1fr;
   gap: 1.5rem;
   margin-bottom: 0;
   height: 23.8em;
+}
+
+.sport-content-1 .sport-data-football:nth-child(3) {
+  height: 34em;
+}
+
+.sport-content-1 .sport-data-football:nth-child(3) .sport-line img {
+  height: 34em;
 }
 
 .gambar-kiri {
@@ -52,10 +61,12 @@
   align-items: center;
   width: 80%;
   margin: auto;
+  text-align: center;
 }
 
 .data-item-sm {
   display: none;
+  text-align: center;
 }
 
 .data-item-content {
@@ -86,11 +97,13 @@
   height: 96%;
 }
 
-.sport-data:last-child .gambar-kiri {
+.sport-data:last-child .gambar-kiri,
+.sport-data-football:last-child .gambar-kiri {
   visibility: hidden;
 }
 
-.sport-data:last-child {
+.sport-data:last-child,
+.sport-data-football:last-child {
   margin-bottom: 8em;
 }
 
@@ -111,6 +124,19 @@
   height: 80px;
   margin: auto;
   position: relative;
+}
+
+.sport-content-1 .sport-data-silat {
+  height: 34em;
+  position: relative;
+}
+
+.lambang-wrapper-silat > .sport-line > img {
+  height: 34em;
+}
+
+.sport-content-1 .sport-data-silat:nth-child(7) .data-item {
+  margin-top: 30px;
 }
 
 /* catur */
@@ -141,14 +167,12 @@
 
 @media screen and (max-width: 834px) {
   .sport-content-1 {
-    margin-bottom: 12em;
-  }
-  .data-item {
-    display: none;
+    margin-bottom: 0em;
+    width: 90%;
   }
 
-  .sport-data:last-child {
-    margin-bottom: 0;
+  .data-item {
+    display: none;
   }
 
   .data-item-sm {
@@ -168,8 +192,26 @@
     height: 18em;
   }
 
-  .sport-data {
+  .sport-data,
+  .sport-data-football {
     height: 18em;
+  }
+
+  .sport-content-1 .sport-data-football:nth-child(3) {
+    height: 23em;
+  }
+
+  .sport-content-1 .sport-data-football:nth-child(3) .sport-line img {
+    height: 23em;
+  }
+
+  .sport-content-1 .sport-data-silat {
+    height: 25em;
+    position: relative;
+  }
+
+  .lambang-wrapper-silat > .sport-line > img {
+    height: 25em;
   }
 
   .simbol-wrapper {
@@ -204,47 +246,105 @@
   .lambang-wrapper-silat {
     width: 55px;
   }
+
+  .data-item-sm-badminton {
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 678px) {
   .data-item-sm {
-    width: 19em;
+    width: 22em;
   }
 
   .sport-subtitle {
     font-size: 18px;
-    letter-spacing: -2.8px;
-  }
-}
-
-@media screen and (max-width: 390px) {
-  .data-item-sm {
-    width: 14em;
   }
 
-  .sport-subtitle {
-    font-size: 17px;
-  }
-
-  .sport-data:last-child {
-    margin-bottom: 3em;
-  }
-
+  .lambang-wrapper,
+  .simbol-wrapper,
   .lambang-wrapper-catur,
   .simbol-wrapper-catur {
     width: 30px;
   }
 
+  .sport-line,
+  .sport-line > img,
   .sport-line-catur,
   .sport-line-catur > img {
     width: 10px;
+  }
+  .lambang-wrapper-silat {
+    width: 35px;
   }
 
   .sport-catur {
     height: 55px;
   }
 
+  .sport-rounder {
+    height: 29px;
+  }
+
+  .sport-lifting {
+    height: 30px;
+  }
+
+  .sport-medal {
+    height: 29px;
+  }
+
+  .sport-medal > img {
+    width: 35px;
+  }
+
+  .sport-lifting > img,
+  .sport-rounder > img,
   .sport-catur > img {
     width: 30px;
+  }
+
+  img .sport-content-1 {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .sport-content-1 {
+    margin-bottom: 5em;
+  }
+
+  .data-item-sm {
+    width: 18em;
+  }
+
+  .sport-subtitle {
+    font-size: 17px;
+    letter-spacing: -2.5px;
+  }
+
+  .sport-data:last-child,
+  .sport-data-football:last-child {
+    margin-bottom: 3em;
+  }
+
+  .sport-content-1 {
+    width: 97%;
+  }
+
+  .data-item-sm-badminton {
+    margin-right: 10px;
+  }
+
+  .sport-data {
+    gap: 1rem;
+  }
+
+  .sport-content-1 .sport-data-esport:nth-child(5) {
+    height: 21em;
+  }
+
+  .sport-content-1 .sport-data-esport:nth-child(5) .sport-line img {
+    height: 21em;
   }
 }

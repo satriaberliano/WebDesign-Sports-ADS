@@ -65,7 +65,7 @@ const FootballHistory = () => {
       <div className='sport-section'>
         <div className='sport-content-1'>
           {dataHistory.map((experience, id, arr) => (
-            <div key={id} className='sport-data'>
+            <div key={id} className='sport-data-football'>
               {(id + 1) % 2 !== 0 && (
                 <>
                   <div className='gambar-kiri'>
@@ -81,7 +81,12 @@ const FootballHistory = () => {
                     </div>
                     {id + 1 !== arr.length && (
                       <div className='sport-line'>
-                        <img src={tali} alt='tali' width='20' />
+                        <img
+                          src={tali}
+                          alt='tali'
+                          width='20'
+                          className='line-football'
+                        />
                       </div>
                     )}
                   </div>
@@ -90,7 +95,6 @@ const FootballHistory = () => {
 
               <div className='data-item'>
                 <div className='data-item-content'>
-                  <p className='sport-title'>{experience.date}</p>
                   <p className='sport-subtitle'>{experience.desc}</p>
                 </div>
               </div>
@@ -102,7 +106,12 @@ const FootballHistory = () => {
                       <img src={bola} alt='bola' width='55' />
                     </div>
                     <div className='sport-line'>
-                      <img src={tali} alt='tali' width='20' />
+                      <img
+                        src={tali}
+                        alt='tali'
+                        width='20'
+                        className='line-football'
+                      />
                     </div>
                   </div>
                   <div className='gambar-kiri'>
@@ -125,7 +134,6 @@ const FootballHistory = () => {
 
               <div className='data-item-sm'>
                 <div className='data-item-content'>
-                  <p className='sport-title'>{experience.date}</p>
                   <p className='sport-subtitle'>{experience.desc}</p>
                 </div>
               </div>
