@@ -41,7 +41,7 @@ const CaturHistory = () => {
 
   return (
     <div className='sport-container catur-container'>
-      <img src={bgCatur} alt='bg-silat' className='bg-catur' />
+      <img src={bgCatur} alt='bg-catur' className='bg-catur' />
       <BackgroundAwan />
       <div className='sport-section'>
         <div className='sport-content-1'>

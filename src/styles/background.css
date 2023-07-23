@@ -10,44 +10,8 @@
   z-index: -2;
 }
 
-.background-awan-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  right: 0;
-  z-index: -1;
-}
-
-.bg-awan-1,
-.bg-awan-2,
-.bg-awan-3 {
-  position: absolute;
-  width: 240%;
-  left: -10%;
-}
-
-.img-awan-1,
-.img-awan-2,
-.img-awan-3 {
-  width: 12em;
-}
-
-.bg-awan-1 {
-  top: 71px;
-  animation: slideLeft 20s linear infinite;
-  z-index: 8;
-}
-
-.bg-awan-2 {
-  top: 269px;
-  animation: slideLeft 30s linear infinite;
-  z-index: 1;
-}
-
-.bg-awan-3 {
-  top: 469px;
-  animation: slideLeft 40s linear infinite;
+.background-bangunan-container {
+  z-index: -5;
 }
 
 .bg-bangunan-1 {
@@ -56,13 +20,14 @@
   left: 50%;
   bottom: 10%;
   transform: translateX(-50%);
-  z-index: -2;
+  z-index: -4;
 }
 
 .bg-bangunan-2 {
   animation: slideTop 10s linear infinite;
   width: fit-content;
   margin: auto;
+  bottom: 0;
 }
 
 .background-tanaman-container {
@@ -80,27 +45,31 @@
   position: absolute;
   bottom: 0;
   left: 100px;
+  z-index: -2;
 }
 
 .bg-tanaman-1,
 .bg-tanaman-2 {
-  z-index: 50;
   width: 16em;
+  z-index: -1;
 }
 
 .bg-tanaman-1 {
-  position: relative;
+  position: absolute;
   left: -60px;
+  bottom: 99px;
 }
 
 .bg-tanaman-2 {
-  margin-top: 8px;
+  position: absolute;
+  bottom: 99px;
+  right: -60px;
 }
 
 .bg-football,
 .bg-taekwondo,
 .bg-angkatbesi,
-.bg-badminton,
+.bg-pebulutangkis,
 .bg-caturKuda,
 .bg-caturMenteri {
   position: absolute;
@@ -110,12 +79,15 @@
   z-index: 10;
   left: 20%;
   transform: translateX(-20%);
+  bottom: 100px;
 }
 
 .bg-taekwondo {
   left: 40%;
   bottom: 130px;
   transform: translateX(-40%);
+  z-index: -4;
+  width: 9em;
 }
 
 .bg-angkatbesi {
@@ -125,16 +97,18 @@
   transform: translateX(-60%);
 }
 
-.bg-badminton {
+.bg-pebulutangkis {
   left: 75%;
-  bottom: 100px;
+  bottom: 90px;
   transform: translateX(-75%);
+  z-index: -4;
 }
 
 .bg-caturKuda {
   left: 85%;
   bottom: 100px;
   transform: translateX(-85%);
+  z-index: -4;
 }
 
 .bg-caturMenteri {
@@ -147,28 +121,12 @@
 .bg-rumput {
   position: absolute;
   margin: auto;
-  bottom: 100px;
+  bottom: 98px;
   left: 50%;
   transform: translateX(-50%);
   width: 85%;
   height: 90px;
-  z-index: 1;
-}
-
-.background-tanah-container {
-  display: flex;
-  flex-direction: row;
-  animation: slideLeft 30s linear infinite;
-  gap: 0;
-}
-
-.bg-tanah-1 {
-  position: absolute;
-  left: -10px;
-}
-
-.bg-tanah {
-  height: 100px;
+  z-index: -3;
 }
 
 @keyframes slideLeft {
@@ -185,12 +143,198 @@
     transform: translateY(150%);
   }
   45% {
-    transform: translateY(90%);
+    transform: translateY(30%);
   }
   55% {
-    transform: translateY(90%);
+    transform: translateY(30%);
   }
   100% {
     transform: translateY(150%);
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .home-container {
+    position: relative;
+    top: 115px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  @keyframes slideTop {
+    0% {
+      transform: translateY(150%);
+    }
+    45% {
+      transform: translateY(50%);
+    }
+    55% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(150%);
+    }
+  }
+
+  .home-container {
+    position: relative;
+    top: 170px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .bg-caturKuda {
+    display: none;
+  }
+  .bg-caturMenteri {
+    max-width: 60px;
+  }
+  .bg-angkatbesi {
+    max-width: 130px;
+    left: 58%;
+  }
+
+  .bg-football,
+  .bg-taekwondo,
+  .bg-pebulutangkis {
+    max-width: 100px;
+  }
+
+  .bendera {
+    max-width: 150px;
+  }
+
+  .home-container {
+    top: 80px;
+  }
+
+  .bendera {
+    left: 50px;
+  }
+
+  @keyframes slideTop {
+    0% {
+      transform: translateY(150%);
+    }
+    45% {
+      transform: translateY(30%);
+    }
+    55% {
+      transform: translateY(30%);
+    }
+    100% {
+      transform: translateY(150%);
+    }
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .bg-football,
+  .bg-taekwondo,
+  .bg-angkatbesi,
+  .bg-pebulutangkis,
+  .bg-caturKuda,
+  .bg-caturMenteri,
+  .bendera {
+    display: none;
+  }
+
+  .bg-rumput {
+    width: 150%;
+    height: 80px;
+  }
+
+  .home-container > h3 {
+    font-size: 35px;
+    line-height: 45px;
+    margin: 0 10px;
+  }
+
+  .home-slogan > span {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .home-container {
+    position: relative;
+    top: 70px;
+  }
+
+  .home-container > h3 {
+    font-size: 26px;
+    line-height: 45px;
+    margin: 0 10px;
+  }
+
+  .home-container > p {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .home-slogan > span {
+    font-size: 26px;
+  }
+
+  .home .home-container a {
+    background-size: 12em;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .bg-tanaman-1,
+  .bg-tanaman-2 {
+    width: 12em;
+  }
+
+  .bg-tanaman-1 {
+    position: relative;
+    left: -90px;
+    bottom: 0;
+  }
+
+  .bg-tanaman-2 {
+    right: -90px;
+  }
+
+  .bg-rumput {
+    width: 200%;
+    height: 70px;
+  }
+
+  @keyframes slideTop {
+    0% {
+      transform: translateY(150%);
+    }
+    45% {
+      transform: translateY(70%);
+    }
+    55% {
+      transform: translateY(70%);
+    }
+    100% {
+      transform: translateY(150%);
+    }
+  }
+}
+
+@media (max-width: 278px) {
+  .home-container > h3 {
+    font-size: 22px;
+    line-height: 40px;
+    margin: 0 10px;
+  }
+
+  .home-container > p {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .home-slogan > span {
+    font-size: 22px;
   }
 }

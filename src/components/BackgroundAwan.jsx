@@ -6,28 +6,13 @@ const BackgroundAwan = () => {
   return (
     <div className='background-awan-container'>
       <div className='bg-awan1'>
-        <img
-          src={awan}
-          alt='background-awan'
-          className='img-awan1'
-          width='170'
-        />
+        <img src={awan} alt='background-awan' className='img-awan1' />
       </div>
       <div className='bg-awan2 '>
-        <img
-          src={awan}
-          alt='background-awan'
-          className='img-awan2'
-          width='170'
-        />
+        <img src={awan} alt='background-awan' className='img-awan2' />
       </div>
       <div className='bg-awan3'>
-        <img
-          src={awan}
-          alt='background-awan'
-          className='img-awan3'
-          width='170'
-        />
+        <img src={awan} alt='background-awan' className='img-awan3' />
       </div>
     </div>
   );

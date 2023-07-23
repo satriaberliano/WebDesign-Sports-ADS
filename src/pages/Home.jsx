@@ -1,5 +1,6 @@
 import React from 'react';
 import Background from './Background';
+import '../styles/background.css';
 
 function Home() {
   return (

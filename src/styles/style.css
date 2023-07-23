@@ -18,6 +18,7 @@ html {
 
 .home {
   text-align: center;
+  height: 100vh;
 }
 
 header {
@@ -81,11 +82,11 @@ header .nav-btn {
 
 /* ============================= */
 .home-container {
-  /* background-color: #86dcf5; */
   margin: auto 0;
   text-align: center;
   padding: 70px 0;
   z-index: 5;
+  position: relative;
 }
 
 .home-slogan {
@@ -97,7 +98,6 @@ header .nav-btn {
   -webkit-background-clip: text;
   background-clip: none;
   -webkit-text-stroke: 0.75px black;
-  /* text-shadow: 2px 2px 0 #000; */
 }
 
 .home-slogan span {
@@ -115,7 +115,6 @@ header .nav-btn {
 }
 
 .home-container a {
-  border: 0;
   color: transparent;
   font-family: 'Press Start 2P', sans-serif;
   padding: 20px;

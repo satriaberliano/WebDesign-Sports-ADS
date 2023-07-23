@@ -1,11 +1,10 @@
-/* background awan */
-
 .background-awan-container {
   position: fixed;
   width: 100%;
   height: 100%;
   overflow: hidden;
   right: 0;
+  top: 0;
   z-index: -1;
 }
 
@@ -38,11 +37,49 @@
   margin-top: 45px;
 }
 
+.img-awan1,
+.img-awan2,
+.img-awan3 {
+  width: 200px;
+}
+
 @keyframes slideLeft {
   0% {
-    transform: translateX(0%);
+    transform: translateX(-20%);
   }
   100% {
-    transform: translateX(100%);
+    transform: translateX(110%);
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .background-awan-container {
+    top: 60px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .background-awan-container {
+    top: -30px;
+  }
+
+  .bg-awan1 {
+    animation: slideLeft 10s linear infinite;
+  }
+
+  .bg-awan2 {
+    top: 220px;
+    animation: slideLeft 20s linear infinite;
+  }
+
+  .bg-awan3 {
+    top: 420px;
+    animation: slideLeft 30s linear infinite;
+  }
+
+  .img-awan1,
+  .img-awan2,
+  .img-awan3 {
+    width: 130px;
   }
 }

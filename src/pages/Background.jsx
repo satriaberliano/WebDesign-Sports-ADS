@@ -12,7 +12,7 @@ import angkatbesi from '../assets/img-background/angkatbesi.png';
 import badminton from '../assets/img-background/badminton.png';
 import caturKuda from '../assets/img-background/catur-kuda.png';
 import caturMenteri from '../assets/img-background/catur-menteri.png';
-import FooterHistory from '../components/BackgroundTanah';
+import BackgroundTanah from '../components/BackgroundTanah';
 import BackgroundAwan from '../components/BackgroundAwan';
 
 const Background = () => {
@@ -56,7 +56,7 @@ const Background = () => {
           <img
             src={badminton}
             alt='badminton-character'
-            className='bg-badminton'
+            className='bg-pebulutangkis'
           />
           <img
             src={caturKuda}
@@ -71,7 +71,7 @@ const Background = () => {
         </div>
         <img src={tanaman2} alt='background-tanaman' className='bg-tanaman-2' />
       </div>
-      <FooterHistory />
+      <BackgroundTanah />
     </div>
   );
 };
