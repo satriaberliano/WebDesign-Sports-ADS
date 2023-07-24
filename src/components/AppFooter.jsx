@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   badmintonPath,
   chessPath,
@@ -7,13 +7,14 @@ import {
   silatPath,
   soccerPath,
   weightLiftingPath,
-} from "../routes";
+} from '../routes';
+import '../styles/responsive.css';
 
 function AppFooter() {
   return (
-    <div className="footer">
-      <div className="footer-top">
-        <div className="footer-top_desc">
+    <div className='footer'>
+      <div className='footer-top'>
+        <div className='footer-top_desc'>
           <h4>
             ADS PROJECTS:
             <br />
@@ -32,8 +33,8 @@ function AppFooter() {
             "Adventures in Indonesian Sports".
           </p>
         </div>
-        <div className="footer-top_category">
-          <div className="footer-top_category-sub">
+        <div className='footer-top_category'>
+          <div className='footer-top_category-sub'>
             <p>Jenis Olahraga</p>
             <ul>
               <li>
@@ -58,13 +59,13 @@ function AppFooter() {
           </div>
         </div>
       </div>
-      <div className="footer-bottom">
-        <div className="footer-bottom_list">
+      <div className='footer-bottom'>
+        <div className='footer-bottom_list'>
           <ul>
             <li>Sitemap</li>
           </ul>
         </div>
-        <div className="footer-bottom_copyright">
+        <div className='footer-bottom_copyright'>
           <p>ADS Projects © 2023, All Rights Reserved</p>
         </div>
       </div>
