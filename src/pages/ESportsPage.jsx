@@ -39,6 +39,15 @@ function ESportsPage() {
     };
   }, []);
 
+  function scrollToHeight() {
+    const bodyHeight = document.body.offsetHeight;
+    const scrollValue = Math.min(bodyHeight, window.innerHeight) + 50;
+    window.scrollTo({
+      top: scrollValue,
+      behavior: 'smooth',
+    });
+  }
+
   return (
     <>
       <div id='esports-page' className='sport-history'>
@@ -75,7 +84,9 @@ function ESportsPage() {
                 alt='ghost pacman'
                 className='sport-character-esports'
               />
-              <a href='#sport-data-esport'>START</a>
+              <a onClick={scrollToHeight} href='#'>
+                START
+              </a>
             </div>
           </div>
 

@@ -52,7 +52,7 @@ const BadmintonHistory = () => {
       <img src={bgBadminton} alt='bg-silat' className='bg-catur' />
       <BackgroundAwan />
       <div className='sport-section'>
-        <div className='sport-content-1' id='sport-data-badminton'>
+        <div className='sport-content-1' id='sport'>
           {dataHistory.map((experience, id, arr) => (
             <div key={id} className='sport-data sport-data-badminton'>
               {(id + 1) % 2 !== 0 && (

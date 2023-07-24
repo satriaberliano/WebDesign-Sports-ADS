@@ -39,6 +39,15 @@ function WeightLiftingPage() {
     };
   }, []);
 
+  function scrollToHeight() {
+    const bodyHeight = document.body.offsetHeight;
+    const scrollValue = Math.min(bodyHeight, window.innerHeight) + 50;
+    window.scrollTo({
+      top: scrollValue,
+      behavior: 'smooth',
+    });
+  }
+
   return (
     <>
       <div id='angkatbesi-page' className='sport-history'>
@@ -75,7 +84,9 @@ function WeightLiftingPage() {
                 alt='weight lifting athlete'
                 className='sport-character-lifter'
               />
-              <a href='#sport-content-lifting'>START</a>
+              <a onClick={scrollToHeight} href='#'>
+                START
+              </a>
             </div>
           </div>
           <div className='batu-sport'>

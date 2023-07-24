@@ -39,6 +39,15 @@ function BadmintonPage() {
     };
   }, []);
 
+  function scrollToHeight() {
+    const bodyHeight = document.body.offsetHeight;
+    const scrollValue = Math.min(bodyHeight, window.innerHeight) + 50;
+    window.scrollTo({
+      top: scrollValue,
+      behavior: 'smooth',
+    });
+  }
+
   return (
     <>
       <div id='bulutangkis-page' className='sport-history'>
@@ -73,12 +82,19 @@ function BadmintonPage() {
                 alt='badminton athlete'
                 className='sport-character-silat'
               />
-              <a href='#sport-data-badminton'>START</a>
+              <a onClick={scrollToHeight} href='#'>
+                Start
+              </a>
             </div>
           </div>
 
           <div className='batu-sport'>
-            <img src={batuBadminton} alt='batu' className='batu-sport' />
+            <img
+              src={batuBadminton}
+              alt='batu'
+              className='batu-sport'
+              id='batu'
+            />
           </div>
         </div>
       </div>

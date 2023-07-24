@@ -13,6 +13,15 @@ function ChessPage() {
   const [typewriter3Visible, setTypewriter3Visible] = useState(false);
   const [typewriter4Visible, setTypewriter4Visible] = useState(false);
 
+  function scrollToHeight() {
+    const bodyHeight = document.body.offsetHeight;
+    const scrollValue = Math.min(bodyHeight, window.innerHeight) + 50;
+    window.scrollTo({
+      top: scrollValue,
+      behavior: 'smooth',
+    });
+  }
+
   useEffect(() => {
     const delay = 500; // Waktu penundaan antara munculnya setiap Typewriter (ms)
 
@@ -76,7 +85,9 @@ function ChessPage() {
                 alt='bidak catur'
                 className='sport-character-catur'
               />
-              <a href='#sport-data-catur'>START</a>
+              <a onClick={scrollToHeight} href='#'>
+                START
+              </a>
             </div>
           </div>
 

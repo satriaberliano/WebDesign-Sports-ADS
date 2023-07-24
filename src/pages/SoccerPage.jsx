@@ -38,6 +38,15 @@ function SoccerPage() {
     };
   }, []);
 
+  function scrollToHeight() {
+    const bodyHeight = document.body.offsetHeight;
+    const scrollValue = Math.min(bodyHeight, window.innerHeight) + 50;
+    window.scrollTo({
+      top: scrollValue,
+      behavior: 'smooth',
+    });
+  }
+
   return (
     <>
       <div id='soccer-page' className='sport-history'>
@@ -66,7 +75,9 @@ function SoccerPage() {
                 alt='athlete soccer'
                 className='sport-character-soccer'
               />
-              <a href='#sport-data-football'>START</a>
+              <a onClick={scrollToHeight} href='#'>
+                START
+              </a>
             </div>
           </div>
 

@@ -44,6 +44,15 @@ function SilatPage() {
     };
   }, []);
 
+  function scrollToHeight() {
+    const bodyHeight = document.body.offsetHeight;
+    const scrollValue = Math.min(bodyHeight, window.innerHeight) + 50;
+    window.scrollTo({
+      top: scrollValue,
+      behavior: 'smooth',
+    });
+  }
+
   return (
     <>
       <div id='silat-page' className='sport-history'>
@@ -102,7 +111,9 @@ function SilatPage() {
                 alt='athlete silat'
                 className='sport-character-silat'
               />
-              <a href='#sport-silat'>START</a>
+              <a onClick={scrollToHeight} href='#'>
+                START
+              </a>
             </div>
           </div>
           <div className='batu-sport'>
