@@ -167,3 +167,94 @@
   font-size: 20px;
   z-index: 0;
 }
+
+@media screen and (max-width: 678px) {
+  .type-writer-wrapper {
+    width: 22rem;
+    height: 6em;
+    padding: 5px;
+  }
+
+  .type-writer {
+    font-size: 15px;
+  }
+
+  .sport h3 {
+    font-size: 30px;
+    line-height: 1.5em;
+  }
+
+  .sport-character-button {
+    gap: 5em;
+    z-index: 10;
+    height: 7em;
+  }
+
+  .sport-character-button > .sport-character-silat {
+    width: 8em;
+  }
+
+  .sport-character-button > .sport-character-soccer {
+    width: 6em;
+  }
+
+  .sport-character-button > .sport-character-esports {
+    width: 8em;
+    height: 7em;
+  }
+
+  .sport-character-button > .sport-character-catur {
+    width: 5.5em;
+  }
+
+  .sport-character-button > .sport-character-lifter {
+    width: 9em;
+  }
+
+  .sport-character-button > a {
+    padding: 10px 17px;
+    border: 3px solid green;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .type-writer-wrapper {
+    width: 20rem;
+    height: 5.5em;
+    padding: 5px;
+  }
+
+  .sport-component {
+    gap: 5em;
+  }
+
+  .type-writer {
+    font-size: 13px;
+  }
+
+  .sport h3 {
+    font-size: 25px;
+    line-height: 1.5em;
+  }
+
+  .sport-character-button {
+    gap: 3em;
+    z-index: 10;
+    height: 7em;
+  }
+
+  .sport-character-button > a {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  .silat-obor-container .obor {
+    width: 2rem;
+  }
+}
+
+@media screen and (max-height: 667px) {
+  .sport-component {
+    gap: 2em;
+  }
+}

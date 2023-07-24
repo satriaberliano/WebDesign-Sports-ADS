@@ -40,7 +40,7 @@ function SoccerPage() {
 
   return (
     <>
-      <div id='sport-history' className='sport-history'>
+      <div id='soccer-page' className='sport-history'>
         <AppHeader />
         <div className='sport'>
           <div className='sport-component'>
@@ -64,7 +64,7 @@ function SoccerPage() {
               <img
                 src={soccerAthlete}
                 alt='athlete soccer'
-                className='sport-character-silat'
+                className='sport-character-soccer'
               />
               <a href='#id'>START</a>
             </div>

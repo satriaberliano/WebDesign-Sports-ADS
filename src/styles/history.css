@@ -340,6 +340,11 @@
 }
 
 @media screen and (max-width: 390px) {
+  .sport-section {
+    top: 60em;
+    margin-bottom: 28em;
+  }
+
   .sport-content-1 {
     margin-bottom: 5em;
   }
@@ -376,5 +381,19 @@
 
   .sport-content-1 .sport-data-esport:nth-child(5) .sport-line img {
     height: 21em;
+  }
+}
+
+@media screen and (min-height: 1024px) {
+  .sport-section {
+    top: 95em;
+    margin-bottom: 65em;
+  }
+}
+
+@media screen and (max-height: 667px) {
+  .sport-section {
+    top: 45em;
+    margin-bottom: 15em;
   }
 }
