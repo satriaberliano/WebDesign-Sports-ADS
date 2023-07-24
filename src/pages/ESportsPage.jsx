@@ -3,6 +3,7 @@ import Typewriter from '../components/TyperWriter';
 import AppHeader from '../components/AppHeader';
 import ghostPacman from '../assets/img-background/ghost-pacman.png';
 import background from '../assets/img-background/esports-background.png';
+import batuEsports from '../assets/img-background/batu-esports.png';
 
 function ESportsPage() {
   const [typewriter1Visible, setTypewriter1Visible] = useState(false);
@@ -38,39 +39,46 @@ function ESportsPage() {
   }, []);
 
   return (
-    <div id='esports-page'>
+    <div id='sport-history' className='sport-history'>
       <AppHeader />
-      <div className='esports'>
-        <div className='esports-background'>
+      <div className='sport'>
+        <div className='sport-background'>
           <img
             src={background}
             alt='esports background'
-            id='esports-background'
+            id='sport-background-id'
           />
         </div>
-        <h3>Sejarah E-Sports di Indonesia</h3>
-        <div className='esports-top'>
+
+        <div className='sport-component'>
+          <h3>Sejarah E-Sports di Indonesia</h3>
           <div className='type-writer-wrapper'>
-            <>
-              {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
-              {typewriter2Visible && (
-                <Typewriter
-                  text='MARI KITA MULAI MEMPELAJARI SEJARAH'
-                  delay={100}
-                />
-              )}
-              {typewriter3Visible && (
-                <Typewriter text='DARI E-SPORTS DI INDONESIA' delay={100} />
-              )}
-              {typewriter4Visible && (
-                <Typewriter text='TEKAN START UNTUK MEMULAI.' delay={100} />
-              )}
-            </>
+            {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
+            {typewriter2Visible && (
+              <Typewriter
+                text='MARI KITA MULAI MEMPELAJARI SEJARAH'
+                delay={100}
+              />
+            )}
+            {typewriter3Visible && (
+              <Typewriter text='DARI E-SPORTS DI INDONESIA' delay={100} />
+            )}
+            {typewriter4Visible && (
+              <Typewriter text='TEKAN START UNTUK MEMULAI.' delay={100} />
+            )}
           </div>
-          <div className='esports-top_text-button'>
-            <img src={ghostPacman} alt='ghost pacman'></img>
+          <div className='sport-character-button'>
+            <img
+              src={ghostPacman}
+              alt='ghost pacman'
+              className='sport-character-esports'
+            />
             <a href='/#'>START</a>
           </div>
+        </div>
+
+        <div className='batu-sport'>
+          <img src={batuEsports} alt='batu' className='batu-sport' />
         </div>
       </div>
     </div>

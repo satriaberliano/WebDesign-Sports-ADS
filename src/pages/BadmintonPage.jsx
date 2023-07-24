@@ -3,6 +3,7 @@ import Typewriter from '../components/TyperWriter';
 import AppHeader from '../components/AppHeader';
 import badmintonAthlete from '../assets/athlete/badminton-athlete.png';
 import background from '../assets/img-background/badminton-background.png';
+import batuBadminton from '../assets/img-background/batu-badminton.png';
 
 function BadmintonPage() {
   const [typewriter1Visible, setTypewriter1Visible] = useState(false);
@@ -11,7 +12,7 @@ function BadmintonPage() {
   const [typewriter4Visible, setTypewriter4Visible] = useState(false);
 
   useEffect(() => {
-    const delay = 500; // Waktu penundaan antara munculnya setiap Typewriter (ms)
+    const delay = 500;
 
     const typewriter1Timer = setTimeout(() => {
       setTypewriter1Visible(true);
@@ -38,39 +39,44 @@ function BadmintonPage() {
   }, []);
 
   return (
-    <div id='bulutangkis-page'>
+    <div id='sport-history' className='sport-history'>
       <AppHeader />
-      <div className='bulutangkis'>
-        <div className='bulutangkis-background'>
+      <div className='sport'>
+        <div className='sport-background'>
           <img
             src={background}
             alt='bulu tangkis background'
-            id='bulutangkis-background'
+            id='sport-background-id'
           />
         </div>
-        <h3>Sejarah Bulu Tangkis di Indonesia</h3>
-        <div className='bulutangkis-top'>
+
+        <div className='sport-component'>
+          <h3>Sejarah Badminton di Indonesia</h3>
           <div className='type-writer-wrapper'>
-            <>
-              {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
-              {typewriter2Visible && (
-                <Typewriter
-                  text='MARI KITA MULAI MEMPELAJARI SEJARAH'
-                  delay={100}
-                />
-              )}
-              {typewriter3Visible && (
-                <Typewriter text='DARI BULU TANGKIS DI INDONESIA' delay={100} />
-              )}
-              {typewriter4Visible && (
-                <Typewriter text='TEKAN START UNTUK MEMULAI.' delay={100} />
-              )}
-            </>
+            {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
+            {typewriter2Visible && (
+              <Typewriter text='MARI KITA MULAI MEMPELAJARI' delay={100} />
+            )}
+            {typewriter3Visible && (
+              <Typewriter text='SEJARAH BADMINTON DI INDONESIA' delay={100} />
+            )}
+            {typewriter4Visible && (
+              <Typewriter text='TEKAN START UNTUK MEMULAI.' delay={100} />
+            )}
           </div>
-          <div className='bulutangkis-top_text-button'>
-            <img src={badmintonAthlete} alt='badminton athlete'></img>
-            <a href='/#'>START</a>
+
+          <div className='sport-character-button'>
+            <img
+              src={badmintonAthlete}
+              alt='badminton athlete'
+              className='sport-character-silat'
+            />
+            <a href='#id'>START</a>
           </div>
+        </div>
+
+        <div className='batu-sport'>
+          <img src={batuBadminton} alt='batu' className='batu-sport' />
         </div>
       </div>
     </div>

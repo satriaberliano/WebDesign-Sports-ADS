@@ -3,6 +3,7 @@ import Typewriter from '../components/TyperWriter';
 import AppHeader from '../components/AppHeader';
 import weightliftingAthlete from '../assets/athlete/weightlifting-athlete.png';
 import background from '../assets/img-background/lifting-background.png';
+import batuLifting from '../assets/img-background/batu-lifting.png';
 
 function WeightLiftingPage() {
   const [typewriter1Visible, setTypewriter1Visible] = useState(false);
@@ -38,19 +39,20 @@ function WeightLiftingPage() {
   }, []);
 
   return (
-    <div id='angkatbesi-page' className='angkatbesi-page'>
+    <div id='sport-history' className='sport-history'>
       <AppHeader />
-      <div className='angkatbesi-background'>
-        <img
-          src={background}
-          alt='angkat besi background'
-          id='angkatbesi-background'
-        />
-      </div>
-      <h3>Sejarah Angkat Besi di Indonesia</h3>
-      <div className='angkatbesi-top'>
-        <div className='type-writer-wrapper'>
-          <>
+      <div className='sport'>
+        <div className='sport-background'>
+          <img
+            src={background}
+            alt='angkat besi background'
+            id='sport-background-id'
+          />
+        </div>
+
+        <div className='sport-component'>
+          <h3>Sejarah Angkat Besi di Indonesia</h3>
+          <div className='type-writer-wrapper'>
             {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
             {typewriter2Visible && (
               <Typewriter
@@ -64,11 +66,18 @@ function WeightLiftingPage() {
             {typewriter4Visible && (
               <Typewriter text='TEKAN START UNTUK MEMULAI.' delay={100} />
             )}
-          </>
+          </div>
+          <div className='sport-character-button'>
+            <img
+              src={weightliftingAthlete}
+              alt='weight lifting athlete'
+              className='sport-character-lifter'
+            />
+            <a href='/#'>START</a>
+          </div>
         </div>
-        <div className='angkatbesi-top_text-button'>
-          <img src={weightliftingAthlete} alt='weight lifting athlete'></img>
-          <a href='/#'>START</a>
+        <div className='batu-sport'>
+          <img src={batuLifting} alt='batu' className='batu-sport' />
         </div>
       </div>
     </div>

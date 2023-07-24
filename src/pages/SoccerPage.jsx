@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import soccerAthlete from "../assets/athlete/soccer-athlete.png";
-import rumput from "../assets/img-background/rumput.png";
-import tanah from "../assets/img-background/tanah.png";
-import Typewriter from "../components/TyperWriter";
-import AppHeader from "../components/AppHeader";
+import React, { useEffect, useState } from 'react';
+import soccerAthlete from '../assets/athlete/soccer-athlete.png';
+import rumput from '../assets/img-background/rumput.png';
+import tanah from '../assets/img-background/tanah.png';
+import Typewriter from '../components/TyperWriter';
+import AppHeader from '../components/AppHeader';
 
-function SoccerPage(){
+function SoccerPage() {
   const [typewriter1Visible, setTypewriter1Visible] = useState(false);
   const [typewriter2Visible, setTypewriter2Visible] = useState(false);
   const [typewriter3Visible, setTypewriter3Visible] = useState(false);
@@ -38,40 +38,40 @@ function SoccerPage(){
     };
   }, []);
 
-
-  return(
-    <>
+  return (
+    <div id='sport-history' className='sport-history'>
       <AppHeader />
-      <div className="soccer">
-        <div className="soccer-background">
-          <img src={rumput} alt="rumput" id="soccer-rumput"/>
-          <div className="soccer-tanah-container">
-            <img src={tanah} alt="tanah" id="soccer-tanah"/>
-          </div>
-        </div>
-        <h3>Sejarah Sepak Bola di Indonesia</h3>
-        <div className="soccer-top">
+      <div className='sport'>
+        <div className='sport-component'>
+          <h3>Sejarah Sepak Bola di Indonesia</h3>
           <div className='type-writer-wrapper'>
-            <>
-              {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
-              {typewriter2Visible && (
-                <Typewriter text='MARI KITA MULAI MEMPELAJARI SEJARAH' delay={100} />
-              )}
-              {typewriter3Visible && (
-                <Typewriter text='SEPAK BOLA DI INDONESIA' delay={100} />
-              )}
-              {typewriter4Visible && (
-                <Typewriter text='TEKAN START UNTUK MEMULAI.' delay={100} />
-              )}
-            </>
+            {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
+            {typewriter2Visible && (
+              <Typewriter
+                text='MARI KITA MULAI MEMPELAJARI SEJARAH'
+                delay={100}
+              />
+            )}
+            {typewriter3Visible && (
+              <Typewriter text='SEPAK BOLA DI INDONESIA' delay={100} />
+            )}
+            {typewriter4Visible && (
+              <Typewriter text='TEKAN START UNTUK MEMULAI.' delay={100} />
+            )}
           </div>
-          <div className="soccer-top_text-button">
-            <img src={soccerAthlete} alt="athlete soccer"></img>
-            <a href="/#">START</a>
+          <div className='sport-character-button'>
+            <img
+              src={soccerAthlete}
+              alt='athlete soccer'
+              className='sport-character-silat'
+            />
+            <a href='#id'>START</a>
           </div>
         </div>
+
+        <div className='batu-sport'></div>
       </div>
-    </>
+    </div>
   );
 }
 

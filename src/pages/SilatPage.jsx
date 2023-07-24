@@ -5,8 +5,10 @@ import obor1 from '../assets/img-background/obor-gif.gif';
 import obor2 from '../assets/img-background/obor-gif.gif';
 import obor3 from '../assets/img-background/obor-gif.gif';
 import obor4 from '../assets/img-background/obor-gif.gif';
+import batuSilat from '../assets/img-background/batu-silat.png';
 import Typewriter from '../components/TyperWriter';
 import AppHeader from '../components/AppHeader';
+import '../styles/history-top.css';
 
 function SilatPage() {
   const [typewriter1Visible, setTypewriter1Visible] = useState(false);
@@ -42,11 +44,11 @@ function SilatPage() {
   }, []);
 
   return (
-    <div id='silat-page'>
+    <div id='sport-history' className='sport-history'>
       <AppHeader />
-      <div className='silat'>
-        <div className='silat-background'>
-          <img src={bangunan} alt='bangunan gelap' id='silat-bangunan' />
+      <div className='sport'>
+        <div className='sport-background'>
+          <img src={bangunan} alt='bangunan gelap' id='sport-background-id' />
           <div className='silat-obor-container'>
             <div className='silat-obor-top'>
               <img src={obor1} alt='obor' className='obor' id='silat-obor-1' />
@@ -58,26 +60,33 @@ function SilatPage() {
             </div>
           </div>
         </div>
-        <h3>Sejarah Silat di Indonesia</h3>
-        <div className='silat-top'>
+
+        <div className='sport-component'>
+          <h3>Sejarah Silat di Indonesia</h3>
           <div className='type-writer-wrapper'>
-            <>
-              {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
-              {typewriter2Visible && (
-                <Typewriter text='MARI KITA MULAI MEMPELAJARI' delay={100} />
-              )}
-              {typewriter3Visible && (
-                <Typewriter text='SEJARAH SILAT DI INDONESIA' delay={100} />
-              )}
-              {typewriter4Visible && (
-                <Typewriter text='TEKAN START UNTUK MEMULAI.' delay={100} />
-              )}
-            </>
+            {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
+            {typewriter2Visible && (
+              <Typewriter text='MARI KITA MULAI MEMPELAJARI' delay={100} />
+            )}
+            {typewriter3Visible && (
+              <Typewriter text='SEJARAH SILAT DI INDONESIA' delay={100} />
+            )}
+            {typewriter4Visible && (
+              <Typewriter text='TEKAN START UNTUK MEMULAI.' delay={100} />
+            )}
           </div>
-          <div className='silat-top_text-button'>
-            <img src={silatAthlete} alt='athlete silat'></img>
+          <div className='sport-character-button'>
+            <img
+              src={silatAthlete}
+              alt='athlete silat'
+              className='sport-character-silat'
+            />
             <a href='/#'>START</a>
           </div>
+        </div>
+
+        <div className='batu-sport'>
+          <img src={batuSilat} alt='batu' className='batu-sport' />
         </div>
       </div>
     </div>

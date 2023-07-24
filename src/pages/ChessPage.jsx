@@ -3,6 +3,8 @@ import chessAthlete from '../assets/athlete/chess-athlete.png';
 import Typewriter from '../components/TyperWriter';
 import AppHeader from '../components/AppHeader';
 import bangunan from '../assets/img-background/bangunan-4.png';
+import batuCatur from '../assets/img-background/batu-catur.png';
+import '../styles/history-top.css';
 
 function ChessPage() {
   const [typewriter1Visible, setTypewriter1Visible] = useState(false);
@@ -38,35 +40,42 @@ function ChessPage() {
   }, []);
 
   return (
-    <div id='chess-page'>
+    <div id='chess-page' className='sport-history'>
       <AppHeader />
-      <div className='chess'>
-        <div className='chess-background'>
-          <img src={bangunan} alt='bangunan terang' id='chess-bangunan' />
+      <div className='sport'>
+        <div className='sport-background'>
+          <img src={bangunan} alt='bangunan terang' id='sport-background-id' />
         </div>
-        <h3>Sejarah Catur di Indonesia</h3>
-        <div className='chess-top'>
+        <div className='sport-component'>
+          <h3>Sejarah Catur di Indonesia</h3>
           <div className='type-writer-wrapper'>
-            <>
-              {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
-              {typewriter2Visible && (
-                <Typewriter
-                  text='MARI KITA MULAI MEMPELAJARI SEJARAH'
-                  delay={100}
-                />
-              )}
-              {typewriter3Visible && (
-                <Typewriter text='DARI CATUR DI INDONESIA' delay={100} />
-              )}
-              {typewriter4Visible && (
-                <Typewriter text='TEKAN START UNTUK MEMULAI.' delay={100} />
-              )}
-            </>
+            {typewriter1Visible && <Typewriter text='Halo!' delay={100} />}
+            {typewriter2Visible && (
+              <Typewriter
+                text='MARI KITA MULAI MEMPELAJARI SEJARAH'
+                delay={100}
+              />
+            )}
+            {typewriter3Visible && (
+              <Typewriter text='DARI CATUR DI INDONESIA' delay={100} />
+            )}
+            {typewriter4Visible && (
+              <Typewriter text='TEKAN START UNTUK MEMULAI.' delay={100} />
+            )}
           </div>
-          <div className='chess-top_text-button'>
-            <img src={chessAthlete} alt='bidak catur'></img>
+
+          <div className='sport-character-button'>
+            <img
+              src={chessAthlete}
+              alt='bidak catur'
+              className='sport-character-catur'
+            />
             <a href='/#'>START</a>
           </div>
+        </div>
+
+        <div className='batu-sport'>
+          <img src={batuCatur} alt='batu' className='batu-sport' />
         </div>
       </div>
     </div>
