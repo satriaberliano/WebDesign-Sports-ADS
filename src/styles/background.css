@@ -358,4 +358,67 @@
   .home-slogan > span {
     font-size: 22px;
   }
+
+  .bg-tanaman-1,
+  .bg-tanaman-2 {
+    width: 12em;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .home-container {
+    position: absolute;
+    top: 8em;
+    width: 100%;
+  }
+
+  .bg-football,
+  .bg-taekwondo,
+  .bg-pebulutangkis {
+    max-width: 100px;
+  }
+
+  .bg-caturKuda {
+    display: none;
+  }
+  .bg-caturMenteri {
+    max-width: 60px;
+  }
+  .bg-angkatbesi {
+    max-width: 130px;
+    left: 56%;
+  }
+
+  .bg-rumput {
+    width: 100%;
+    height: 70px;
+  }
+
+  .home-container > h3 {
+    font-size: 35px;
+    line-height: 45px;
+    margin: 0 10px;
+  }
+
+  .home-slogan > span {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .home-container {
+    position: absolute;
+    top: 6em;
+    width: 100%;
+  }
+
+  .bg-football,
+  .bg-taekwondo,
+  .bg-angkatbesi,
+  .bg-pebulutangkis,
+  .bg-caturKuda,
+  .bg-caturMenteri,
+  .bendera {
+    display: none;
+  }
 }

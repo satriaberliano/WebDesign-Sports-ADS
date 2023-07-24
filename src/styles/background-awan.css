@@ -83,3 +83,9 @@
     width: 130px;
   }
 }
+
+@media screen and (max-height: 800px) {
+  .bg-awan3 > img {
+    display: none;
+  }
+}
