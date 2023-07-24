@@ -56,6 +56,10 @@ header .navigation ul li a:hover {
   transition: 0.2s ease-in;
 }
 
+.navigation ul li .active {
+  text-decoration: underline;
+}
+
 .header-name {
   font-family: 'Press Start 2P', sans-serif;
   display: flex;
