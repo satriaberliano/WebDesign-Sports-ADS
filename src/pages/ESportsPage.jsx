@@ -75,7 +75,7 @@ function ESportsPage() {
                 alt='ghost pacman'
                 className='sport-character-esports'
               />
-              <a href='/#'>START</a>
+              <a href='#sport-data-esport'>START</a>
             </div>
           </div>
 

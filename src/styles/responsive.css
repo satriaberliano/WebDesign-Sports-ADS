@@ -47,6 +47,13 @@
   .type-writer {
     font-size: 12px;
   }
+
+  #silat-page header .navigation ul li a,
+  #esports-page header .navigation ul li a,
+  #bulutangkis-page header .navigation ul li a,
+  #angkatbesi-page header .navigation ul li a {
+    color: #000000;
+  }
 }
 
 @media screen and (max-width: 834px) {

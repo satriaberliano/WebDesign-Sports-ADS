@@ -42,7 +42,7 @@ const LiftingHistory = () => {
     <div className='sport-container'>
       <img src={bgLifting} alt='bg-silat' className='bg-silat' />
       <div className='sport-section'>
-        <div className='sport-content-1'>
+        <div className='sport-content-1' id='sport-content-lifting'>
           {dataHistory.map((experience, id, arr) => (
             <div key={id} className='sport-data sport-data-lifting'>
               {(id + 1) % 2 !== 0 && (

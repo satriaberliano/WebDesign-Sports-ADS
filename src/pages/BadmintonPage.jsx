@@ -73,7 +73,7 @@ function BadmintonPage() {
                 alt='badminton athlete'
                 className='sport-character-silat'
               />
-              <a href='#id'>START</a>
+              <a href='#sport-data-badminton'>START</a>
             </div>
           </div>
 

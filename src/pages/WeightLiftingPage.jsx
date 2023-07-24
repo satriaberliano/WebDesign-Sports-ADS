@@ -75,7 +75,7 @@ function WeightLiftingPage() {
                 alt='weight lifting athlete'
                 className='sport-character-lifter'
               />
-              <a href='/#'>START</a>
+              <a href='#sport-content-lifting'>START</a>
             </div>
           </div>
           <div className='batu-sport'>

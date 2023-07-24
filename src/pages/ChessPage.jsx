@@ -76,7 +76,7 @@ function ChessPage() {
                 alt='bidak catur'
                 className='sport-character-catur'
               />
-              <a href='/#'>START</a>
+              <a href='#sport-data-catur'>START</a>
             </div>
           </div>
 

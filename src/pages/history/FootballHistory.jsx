@@ -63,7 +63,7 @@ const FootballHistory = () => {
     <div className='sport-container'>
       <BackgroundAwan />
       <div className='sport-section'>
-        <div className='sport-content-1'>
+        <div className='sport-content-1' id='sport-data-football'>
           {dataHistory.map((experience, id, arr) => (
             <div key={id} className='sport-data-football'>
               {(id + 1) % 2 !== 0 && (

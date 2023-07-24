@@ -42,7 +42,7 @@ const EsportHistory = () => {
     <div className='sport-container catur-container'>
       <img src={bgEsport} alt='bg-esport' className='bg-esport' />
       <div className='sport-section'>
-        <div className='sport-content-1'>
+        <div className='sport-content-1' id='sport-data-esport'>
           {dataHistory.map((experience, id, arr) => (
             <div key={id} className='sport-data sport-data-esport'>
               {(id + 1) % 2 !== 0 && (

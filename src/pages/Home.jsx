@@ -2,6 +2,7 @@ import React from 'react';
 import Background from './Background';
 import '../styles/background.css';
 import AppHeader from '../components/AppHeader';
+import { sportsPath } from '../routes';
 
 function Home() {
   return (
@@ -19,7 +20,7 @@ function Home() {
           Mari kita jelajahi dan gali sejarah dari <br />
           olahraga di seluruh penjuru Nusantara!
         </p>
-        <a href='#id' className='button-mulai-jelajah'>
+        <a href={sportsPath} className='button-mulai-jelajah'>
           <span>Mulai Jelajah</span>
         </a>
       </div>

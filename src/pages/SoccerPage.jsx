@@ -66,7 +66,7 @@ function SoccerPage() {
                 alt='athlete soccer'
                 className='sport-character-soccer'
               />
-              <a href='#id'>START</a>
+              <a href='#sport-data-football'>START</a>
             </div>
           </div>
 

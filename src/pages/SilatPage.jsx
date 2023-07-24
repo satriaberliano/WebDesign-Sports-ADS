@@ -102,7 +102,7 @@ function SilatPage() {
                 alt='athlete silat'
                 className='sport-character-silat'
               />
-              <a href='/#'>START</a>
+              <a href='#sport-silat'>START</a>
             </div>
           </div>
           <div className='batu-sport'>
