@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+  header .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: 0.75s;
+    transform: translateY(-100vh);
+    z-index: 2;
+  }
+
+  header .navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  header .navigation ul li {
+    margin: 0 !important;
+    font-size: 24px;
+  }
+
+  header .navigation ul li a {
+    padding: 0;
+  }
+
+  header .responsive_nav {
+    transform: none;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+  }
+
+  .type-writer-wrapper {
+    width: 22em;
+  }
+
+  .type-writer {
+    font-size: 12px;
+  }
+}

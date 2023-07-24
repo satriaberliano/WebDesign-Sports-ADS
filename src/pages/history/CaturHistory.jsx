@@ -5,7 +5,7 @@ import catur from '../../assets/img-sejarah/catur.png';
 import bgCatur from '../../assets/img-sejarah/bg-catur.png';
 import BackgroundTanah from '../../components/BackgroundTanah';
 import ArrowUp from '../../components/ArrowUp';
-import BackgroundAwan from '../../components/BackgroundAwan';
+import BackgroundAwanHistory from '../../components/BackgroundAwanHistory';
 
 const CaturHistory = () => {
   const dataHistory = [
@@ -42,11 +42,11 @@ const CaturHistory = () => {
   return (
     <div className='sport-container catur-container'>
       <img src={bgCatur} alt='bg-catur' className='bg-catur' />
-      <BackgroundAwan />
+      <BackgroundAwanHistory />
       <div className='sport-section'>
         <div className='sport-content-1'>
           {dataHistory.map((experience, id, arr) => (
-            <div key={id} className='sport-data'>
+            <div key={id} className='sport-data sport-data-catur'>
               {(id + 1) % 2 !== 0 && (
                 <>
                   <div className='gambar-kiri'></div>

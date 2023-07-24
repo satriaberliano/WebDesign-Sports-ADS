@@ -1,12 +1,15 @@
 .sport-container {
-  margin-top: 10px;
   overflow: hidden;
+  margin-bottom: -1px;
 }
 
 .sport-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 75em;
+  margin-bottom: 45em;
 }
 
 .sport-content-1 {
@@ -28,6 +31,10 @@
 
 .sport-content-1 .sport-data-football:nth-child(3) .sport-line img {
   height: 34em;
+}
+
+.sport-content-1 .sport-data-football:last-child {
+  margin-bottom: 25em;
 }
 
 .gambar-kiri {
@@ -113,10 +120,9 @@
 .bg-esport,
 .bg-lifting {
   position: fixed;
-  z-index: -2;
+  z-index: -5;
   width: 100%;
   height: 100vh;
-  top: 0px;
 }
 
 .sport-medal {
@@ -139,6 +145,22 @@
   margin-top: 30px;
 }
 
+.sport-content-1 .sport-data-silat:last-child {
+  margin-bottom: 25em;
+}
+
+.sport-content-1 .sport-data-esport:last-child {
+  margin-bottom: 30em;
+}
+
+.sport-content-1 .sport-data-badminton:last-child {
+  margin-bottom: 30em;
+}
+
+.sport-content-1 .sport-data-lifting:last-child {
+  margin-bottom: 30em;
+}
+
 /* catur */
 .sport-catur {
   height: 98px;
@@ -156,6 +178,10 @@
 .sport-lifting {
   height: 45px;
   position: relative;
+}
+
+.sport-content-1 .sport-data-catur:last-child {
+  margin-bottom: 35em;
 }
 
 @media screen and (max-width: 1024px) {
@@ -208,6 +234,10 @@
   .sport-content-1 .sport-data-silat {
     height: 25em;
     position: relative;
+  }
+
+  .sport-content-1 .sport-data-catur:last-child {
+    margin-bottom: 35em;
   }
 
   .lambang-wrapper-silat > .sport-line > img {

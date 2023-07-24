@@ -1,10 +1,12 @@
 import React from 'react';
 import Background from './Background';
 import '../styles/background.css';
+import AppHeader from '../components/AppHeader';
 
 function Home() {
   return (
     <div className='home'>
+      <AppHeader />
       <Background />
       <div className='home-container'>
         <h3 className='home-slogan'>

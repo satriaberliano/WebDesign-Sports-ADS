@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { aboutUsPath, communityPath, rootPath, sportPath } from "../routes";
+import { aboutUsPath, referencePath, rootPath, sportsPath } from "../routes";
 import { FaTimes } from "react-icons/fa";
 
 const Navigation = React.forwardRef(({ showNavbar, hideNavbar }, ref) => {
@@ -13,13 +13,13 @@ const Navigation = React.forwardRef(({ showNavbar, hideNavbar }, ref) => {
           </Link>
         </li>
         <li>
-          <Link to={sportPath} onClick={hideNavbar}>
+          <Link to={sportsPath} onClick={hideNavbar}>
             Olahraga
           </Link>
         </li>
         <li>
-          <Link to={communityPath} onClick={hideNavbar}>
-            Komunitas
+          <Link to={referencePath} onClick={hideNavbar}>
+            Referensi
           </Link>
         </li>
         <li>

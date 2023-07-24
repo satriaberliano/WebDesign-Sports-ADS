@@ -54,7 +54,7 @@ const BadmintonHistory = () => {
       <div className='sport-section'>
         <div className='sport-content-1'>
           {dataHistory.map((experience, id, arr) => (
-            <div key={id} className='sport-data'>
+            <div key={id} className='sport-data sport-data-badminton'>
               {(id + 1) % 2 !== 0 && (
                 <>
                   <div className='gambar-kiri'></div>

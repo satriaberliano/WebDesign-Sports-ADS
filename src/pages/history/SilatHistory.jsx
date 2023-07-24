@@ -52,7 +52,7 @@ const SilatHistory = () => {
       <div className='sport-section'>
         <div className='sport-content-1 sport-content-silat'>
           {dataExperience.map((experience, id, arr) => (
-            <div key={id} className='sport-data sport-data-silat'>
+            <div key={id} className='sport-data sport-data-silat '>
               {(id + 1) % 2 !== 0 && (
                 <>
                   <div className='gambar-kiri'>
