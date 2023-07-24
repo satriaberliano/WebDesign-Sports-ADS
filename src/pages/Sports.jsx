@@ -45,7 +45,7 @@ function Sports() {
             </Link>
             <Link className='sports-card' to={badmintonPath}>
               <img src={logobulutangkis} alt='gambar bulu tangkis' />
-              <p>Bulu Tangkis</p>
+              <p>Badminton</p>
             </Link>
             <Link className='sports-card' to={weightLiftingPath}>
               <img src={logoangkatbesi} alt='gambar angkat besi' />
